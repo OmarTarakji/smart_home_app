@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="200px" height="200px" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 2.62 2.62"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+    <radialGradient id="id0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.22858 -0 -0 1.67348 0 -1)" cx="1.85" cy="1.38" r="0.8" fx="1.85" fy="1.38">
+     <stop offset="0" stop-opacity="1" stop-color="#25A7D8"/>
+     <stop offset="1" stop-opacity="1" stop-color="#A5EBF9"/>
+    </radialGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2303857167872">
+   <path fill="#282829" d="M2.23 1.02l0 1.5 -1.84 0 0 -1.5c0,-0.51 0.41,-0.92 0.92,-0.92 0.5,0 0.92,0.41 0.92,0.92z"/>
+   <path fill="url(#id0)" d="M1.4 1.42l0 0.98 0.71 0 0 -0.98 -0.71 0zm0 -1.2l0 1.09 0.71 0 0 -0.29c0,-0.41 -0.31,-0.76 -0.71,-0.8zm-0.18 0c-0.4,0.04 -0.71,0.39 -0.71,0.8l0 0.29 0.71 0 0 -1.09zm0 1.2l-0.71 0 0 0.98 0.71 0 0 -0.98z"/>
+   <line fill="none" stroke="gray" stroke-width="0.02" stroke-miterlimit="2.61313" x1="1.31" y1="2.52" x2="1.31" y2= "0.1" />
+   <path fill="white" fill-opacity="0.270588" d="M1.69 2.4l0.42 -0.34 0 -0.64 -0.11 0 -0.6 0.5 0 0.48 0.29 0zm-0.47 -0.34l-0.4 0.34 0.4 0 0 -0.34zm0.18 -1.47l0 0.13 0.4 -0.33c-0.03,-0.02 -0.06,-0.04 -0.09,-0.06l-0.31 0.26zm0 0.27l0 0.45 0.13 0 0.56 -0.47c-0.03,-0.14 -0.11,-0.28 -0.21,-0.38l-0.48 0.4zm-0.87 0.45l0.15 0 0.54 -0.45 0 -0.13 -0.69 0.58zm0.32 0l0.37 0 0 -0.31 -0.37 0.31zm0.37 0.11l-0.51 0 -0.2 0.17 0 0.56 0.71 -0.59 0 -0.14zm-0.67 0l-0.04 0 0 0.03 0.04 -0.03z"/>
+   <rect fill="none" width="2.62" height="2.62"/>
+  </g>
+ </g>
+</svg>

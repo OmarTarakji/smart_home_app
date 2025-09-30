@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="199px" height="199px" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 2.83 2.83"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+    <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="1.42" y1="2.45" x2="1.42" y2="0.51">
+     <stop offset="0" stop-opacity="1" stop-color="#CAD2D4"/>
+     <stop offset="0.85098" stop-opacity="1" stop-color="#9FACB6"/>
+     <stop offset="1" stop-opacity="1" stop-color="#738597"/>
+    </linearGradient>
+    <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="1.42" y1="2.45" x2="1.42" y2="1.24">
+     <stop offset="0" stop-opacity="1" stop-color="#BBC2C3"/>
+     <stop offset="1" stop-opacity="1" stop-color="#78949C"/>
+    </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2219300917472">
+   <rect fill="none" width="2.83" height="2.83"/>
+   <rect fill="#5C5C5C" x="0.55" y="1.17" width="1.73" height="1.29"/>
+   <path fill="url(#id0)" d="M0.28 1.01l0 1.44 0.27 0 0 -1.17c0,-0.06 0.05,-0.11 0.11,-0.11l1.51 0c0.06,0 0.11,0.05 0.11,0.11l0 1.17 0.27 0 0 -1.44 -1.13 -0.5 -1.14 0.5z"/>
+   <path fill="url(#id1)" d="M2.16 1.44l-1.48 0c-0.03,0 -0.05,-0.02 -0.05,-0.04l0 -0.12c0,-0.02 0.02,-0.04 0.05,-0.04l1.48 0c0.02,0 0.04,0.02 0.04,0.04l0 0.12c0,0.02 -0.02,0.04 -0.04,0.04zm0 1.01l-1.48 0c-0.03,0 -0.05,-0.02 -0.05,-0.04l0 -0.11c0,-0.03 0.02,-0.05 0.05,-0.05l1.48 0c0.02,0 0.04,0.02 0.04,0.05l0 0.11c0,0.02 -0.02,0.04 -0.04,0.04zm0 -0.25l-1.48 0c-0.03,0 -0.05,-0.02 -0.05,-0.05l0 -0.11c0,-0.02 0.02,-0.04 0.05,-0.04l1.48 0c0.02,0 0.04,0.02 0.04,0.04l0 0.11c0,0.03 -0.02,0.05 -0.04,0.05zm0 -0.25l-1.48 0c-0.03,0 -0.05,-0.02 -0.05,-0.05l0 -0.11c0,-0.03 0.02,-0.05 0.05,-0.05l1.48 0c0.02,0 0.04,0.02 0.04,0.05l0 0.11c0,0.03 -0.02,0.05 -0.04,0.05zm0 -0.26l-1.48 0c-0.03,0 -0.05,-0.02 -0.05,-0.04l0 -0.11c0,-0.03 0.02,-0.05 0.05,-0.05l1.48 0c0.02,0 0.04,0.02 0.04,0.05l0 0.11c0,0.02 -0.02,0.04 -0.04,0.04z"/>
+   <path fill="black" fill-rule="nonzero" d="M2.83 1.14c-0.02,0.04 -0.08,0.06 -0.12,0.04l-1.29 -0.56 -1.29 0.56c-0.05,0.02 -0.11,0 -0.13,-0.04 0,-0.08 0,-0.14 0,-0.22 0.01,-0.02 0.03,-0.04 0.05,-0.05l1.37 -0.6 1.36 0.6c0.03,0.01 0.04,0.03 0.05,0.05 0,0.08 0,0.14 0,0.22z"/>
+  </g>
+ </g>
+</svg>

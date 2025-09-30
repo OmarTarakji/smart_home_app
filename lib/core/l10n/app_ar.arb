@@ -1,0 +1,361 @@
+{
+  "@@locale": "ar",
+  "language": "العربية",
+
+  "dashboard": "لوحة التحكم",
+  "devices": "الأجهزة",
+  "rooms": "الغرف",
+  "profile": "الحساب",
+
+  "exitAndCancel": "العودة",
+  "delete": "حذف",
+  "loading": "جاري التحميل...",
+  "add": "إضافة",
+  "save": "حفظ",
+
+  "loginWelcomeBack": "مرحبًا بعودتك",
+  "loginButtonText": "تسجيل الدخول",
+  "loginDemoButton": "حساب تجريبي",
+  "loginNeedAccount": "ليس لديك حساب؟ سجل الآن",
+  "loginLoggingIn": "جاري تسجيل الدخول...",
+
+  "signupCreateAccountTitle": "أنشئ حسابك",
+  "signupButtonText": "إنشاء حساب",
+  "signupSignInInstead": "تسجيل الدخول بدلاً من ذلك",
+  "signupCreatingAccount": "جاري إنشاء الحساب...",
+
+  "password": "كلمة المرور",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "username": "اسم المستخدم",
+  "enterUsername": "ادخل اسم المستخدم",
+
+  "dashboardLoadingComponents": "جار تحميل المكونات...",
+  "dashboardNoComponentsFound": "لم يتم العثور على مكونات",
+  "dashboardUnassignedRoom": "غير مخصص",
+
+  "dashboardOptionsLayout": "طريقة العرض:",
+  "dashboardOptionsLayoutGrid": "شبكة",
+  "dashboardOptionsLayoutList": "قائمة",
+  "dashboardOptionsGroupBy": "تجميع حسب:",
+  "dashboardOptionsGroupByNone": "بدون",
+  "dashboardOptionsGroupByRoom": "الغرفة",
+  "dashboardOptionsGroupByDevice": "الجهاز",
+  "dashboardOptionsButtonOK": "موافق",
+
+  "fingerprintManage": "إدارة بصمات الأصابع",
+  "fingerprintScanHistory": "سجل المسح",
+
+  "latestActivities": "آخر النشاطات",
+  "flameSensorNoActivities": "لا توجد أنشطة بعد",
+  "flameSensorFlameDetected": "تم الكشف عن لهب",
+
+  "stateIndicatorSyncing": "جاري المزامنة...",
+  "stateIndicatorSynced": "تمت المزامنة",
+  "stateIndicatorError": "خطأ",
+
+  "morningHour": "{hour} ص",
+  "@morningHour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "eveningHour": "{hour} م",
+  "@eveningHour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+
+  "componentPopupMenuRename": "إعادة تسمية",
+  "componentPopupMenuChangeIcon": "تغيير الأيقونة",
+
+  "componentValueNoReadingsYet": "لا توجد قراءات بعد",
+  "componentValueUnhandledComponent": "مكون غير معالج",
+
+  "errorNoInternet": "لا يوجد اتصال بالإنترنت. يرجى التحقق من الشبكة والمحاولة مرة أخرى.",
+  "errorConnectionTimeout": "انتهت مهلة الاتصال. قد يكون الخادم مشغولاً.",
+  "errorNetwork": "خطأ في الشبكة: {errorMessage}",
+  "@errorNetwork": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorNetworkUnavailable": "الشبكة غير متاحة. يرجى التحقق من اتصالك بالإنترنت.",
+  "errorRequestTimedOut": "انتهت مهلة الطلب. يرجى المحاولة مرة أخرى لاحقًا.",
+  "errorNetworkIssue": "تم اكتشاف مشكلة في الشبكة. يرجى التحقق من اتصالك.",
+  "errorAuthentication": "خطأ في المصادقة: {errorMessage}",
+  "@errorAuthentication": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorDatabase": "خطأ في قاعدة البيانات: {errorMessage}",
+  "@errorDatabase": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorStorage": "خطأ في تخزين الملفات: {errorMessage}",
+  "@errorStorage": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFailedSaveChanges": "فشل حفظ التغييرات: {errorMessage}",
+  "@errorFailedSaveChanges": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFailedPickImage": "فشل اختيار الصورة: {errorMessage}",
+  "@errorFailedPickImage": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorFailedLinkDevice": "فشل ربط الجهاز: {errorMessage}",
+  "@errorFailedLinkDevice": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLocationPermissionRequired": "إذن الموقع مطلوب لتهيئة الواي فاي",
+  "errorPermissionDenied": "تم رفض الإذن، يرجى السماح بإذن الموقع يدويًا من الإعدادات.",
+  "errorInvalidInput": "إدخال غير صالح: {errorMessage}",
+  "@errorInvalidInput": {
+    "placeholders": {
+      "errorMessage": {
+        "type": "String"
+      }
+    }
+  },
+  "errorActionNotAllowed": "هذا الإجراء غير مسموح به في الحساب التجريبي.",
+  "errorUnexpected": "خطأ غير متوقع.",
+
+  "dateToday": "اليوم",
+  "dateYesterday": "الأمس",
+
+  "componentNameTemperature": "درجة الحرارة",
+  "componentNameHumidity": "الرطوبة",
+  "componentNameWaterLevel": "مستوى الماء",
+  "componentNameGas": "كاشف الغاز",
+  "componentNameFlame": "مستشعر اللهب",
+  "componentNamePir": "مستشعر الحركة",
+  "componentNameLdr": "مستشعر الضوء",
+  "componentNameFingerprint": "ماسح البصمات",
+  "componentNameWindow": "نافذة",
+  "componentNameDoor": "باب",
+  "componentNameLight": "ضوء",
+  "componentNameBuzzer": "جرس",
+  "componentNameSecurity": "نظام الأمن",
+
+  "devicesScreenTitle": "أجهزتك",
+  "devicesScreenAddDeviceButton": "إضافة جهاز",
+  "devicesScreenNeedInternetAccess": "تحتاج إلى اتصال بالإنترنت!",
+  "devicesScreenLoadingList": "جاري تحميل قائمة الأجهزة...",
+  "devicesScreenUntitledDevice": "بدون عنوان",
+
+  "linkDeviceModalAlreadyLinked": "هذا الجهاز مرتبط بالفعل بحسابك",
+  "linkDeviceModalLinkButton": "ربط هذا الجهاز",
+
+  "newDeviceScreenWifiConfigHeader": "توصيل الجهاز بشبكة الواي فاي باستخدام بروتوكول ESP-Touch",
+  "newDeviceScreenDeviceDiscoveryHeader": "حدد الجهاز الذي تريد ربطه من القائمة:",
+  "newDeviceScreenAppBarTitle": "ربط جهاز",
+  "newDeviceScreenWifiNetworkNote": "تأكد من أنك متصل بنفس شبكة الواي فاي التي يتصل بها الجهاز الذي تريد ربطه.",
+  "newDeviceScreenLinkingDeviceProgress": "جاري ربط الجهاز...",
+
+  "deviceDetailsUntitledDevice": "بدون عنوان",
+  "deviceDetailsDeviceTypeLabel": "نوع الجهاز",
+  "deviceDetailsMacAddressLabel": "عنوان MAC",
+  "deviceDetailsDateAddedLabel": "تاريخ الإضافة",
+  "deviceDetailsSensorsLabel": "المستشعرات",
+  "deviceDetailsControlsLabel": "أدوات التحكم",
+
+  "deviceDiscoveryMacAddressLabel": "عنوان MAC: ",
+  "deviceDiscoveryLinkedSuccess": "تم ربط الجهاز بنجاح",
+  "deviceDiscoveryLinkFailedTitle": "فشل ربط الجهاز",
+  "deviceDiscoveryRefreshButton": "تحديث",
+  "deviceDiscoveryNoDevicesFound": "لم يتم العثور على أجهزة",
+  "deviceDiscoveryVpnWarning": "إذا كان لديك VPN قيد التشغيل، قم بإيقاف تشغيله ثم أعد المحاولة.",
+
+  "deviceQuickOptionsEditButton": "تعديل",
+  "deviceQuickOptionsInfoButton": "تفاصيل الجهاز",
+  "deviceQuickOptionsUnlinkButton": "إلغاء الربط",
+  "deviceQuickOptionsUnlinkDialogTitle": "إلغاء ربط {deviceNameOrType}",
+  "@deviceQuickOptionsUnlinkDialogTitle": {
+      "placeholders": {
+          "deviceNameOrType": {
+              "type": "String"
+          }
+      }
+  },
+  "deviceQuickOptionsUnlinkDialogMessage": "سيؤدي هذا إلى إزالة الجهاز وجميع مكوناته من حسابك!",
+  "deviceQuickOptionsUnlinkDialogConfirmButton": "إلغاء الربط",
+  "deviceQuickOptionsUnlinkSuccessSnackbar": "تم إلغاء ربط الجهاز بنجاح",
+  "deviceQuickOptionsRenameDialogTitle": "إعادة تسمية الجهاز",
+  "deviceQuickOptionsRenameSuccessSnackbar": "تمت إعادة تسمية الجهاز إلى {newName}",
+  "@deviceQuickOptionsRenameSuccessSnackbar": {
+      "placeholders": {
+          "newName": {
+              "type": "String"
+          }
+      }
+  },
+  "deviceQuickOptionsRenameDialogHint": "الاسم",
+  "deviceQuickOptionsRenameDialogCancelButton": "إلغاء",
+  "deviceQuickOptionsRenameDialogSaveButton": "حفظ",
+
+  "udpDeviceDetailsIpAddressLabel": "عنوان IP",
+
+  "wifiConfigCredentialsTitle": "بيانات شبكة الواي فاي:",
+  "wifiConfigSsidLabel": "SSID (اسم الشبكة)",
+  "wifiConfigSsidNotFound": "غير موجود!",
+  "wifiConfigGetSsidButton": "احصل على SSID",
+  "wifiConfigInstructions": "على الجهاز: اضغط مع الاستمرار على زر إعادة الضبط لمدة 3 ثوانٍ ثم انقر فوق زر \"بدء التجهيز\".",
+  "wifiConfigStartProvisioningButton": "بدء التجهيز",
+  "wifiConfigMissingArgsSnackbar": "بعض الحقول مفقودة!",
+  "wifiConfigProvisioningDialogTitle": "التجهيز",
+  "wifiConfigProvisioningDialogContent": "بدأ التجهيز. يرجى الانتظار...",
+  "wifiConfigStopButton": "إيقاف",
+  "wifiConfigDeviceProvisionedDialogTitle": "تم تجهيز الجهاز",
+  "wifiConfigDeviceProvisionedDialogContentSuccess": "تم توصيل الجهاز بالشبكة بنجاح",
+  "wifiConfigDeviceProvisionedDialogContentDeviceLabel": "الجهاز:",
+  "wifiConfigDialogDeviceIp": "عنوان IP: {ipAddressText}",
+  "@wifiConfigDialogDeviceIp": {
+      "placeholders": {
+          "ipAddressText": {
+              "type": "String"
+          }
+      }
+  },
+  "wifiConfigDialogDeviceBssid": "BSSID: {bssidText}",
+  "@wifiConfigDialogDeviceBssid": {
+      "placeholders": {
+          "bssidText": {
+              "type": "String"
+          }
+      }
+  },
+  "wifiConfigSsidSnackbar": "SSID: {ssid}",
+  "@wifiConfigSsidSnackbar": {
+      "placeholders": {
+          "ssid": {
+              "type": "String"
+          }
+      }
+  },
+  "wifiConfigOpenSettingsButton": "فتح الإعدادات",
+
+  "imageOptionsCameraButton": "الكاميرا",
+  "imageOptionsGalleryButton": "المعرض",
+  "imageOptionsRemoveButton": "إزالة",
+
+  "notificationsScreenTitle": "الإشعارات",
+  "notificationsScreenNoNotifications": "لا توجد إشعارات",
+  "notificationsScreenGroupThisWeek": "هذا الأسبوع",
+  "notificationsScreenGroupOlder": "أقدم",
+  "notificationsScreenLoading": "جار تحميل الإشعارات...",
+
+  "changePasswordScreenTitle": "تغيير كلمة المرور",
+  "changePasswordCurrentPasswordLabel": "كلمة المرور الحالية",
+  "changePasswordNewPasswordLabel": "كلمة المرور الجديدة",
+  "changePasswordSuccessSnackbar": "تم تغيير كلمة المرور بنجاح",
+
+  "editProfileScreenTitle": "تعديل الملف الشخصي",
+  "editProfileUploadingImage": "جاري رفع الصورة...",
+  "editProfileUpdatingData": "جاري تحديث البيانات...",
+  "editProfileSuccessSnackbar": "تم تحديث الملف الشخصي بنجاح.",
+  "editProfileConfirmationDialogSaveChanges": "حفظ التغييرات",
+
+  "profileActionsLogOut": "تسجيل الخروج",
+  "appInfoLanguageLabel": "اللغة",
+  "appInfoContactSupport": "اتصل بالدعم",
+  "changeLanguageDialogTitle": "تغيير اللغة",
+
+  "profileAddName": "إضافة اسم",
+  "profileFailedToLoad": "فشل تحميل معلومات المستخدم!",
+  "profileLoadingUserInformation": "جاري تحميل معلومات المستخدم...",
+
+  "addRoomScreenTitle": "إضافة غرفة",
+  "roomsScreenTitle": "الغرف",
+  "roomsScreenAddRoomButton": "إضافة غرفة",
+
+  "deleteRoomDialogTitle": "حذف {name}؟",
+  "@deleteRoomDialogTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteRoomDialogLoadingText": "جاري حذف الغرفة...",
+
+  "renameRoomDialogTitle": "إعادة تسمية الغرفة",
+  "renameRoomDialogNewNameLabel": "الاسم الجديد",
+  "renameRoomDialogEmptyNameError": "لا يمكن أن يكون الاسم فارغًا",
+  "roomPopupMenuDeleteRoom": "حذف الغرفة",
+
+  "componentsPickerLoadingComponents": "جار تحميل المكونات...",
+  "componentsPickerNoComponentsFound": "لم يتم العثور على مكونات ذكية",
+  "componentsPickerOtherDevices": "أجهزة أخرى",
+  "componentsPickerPickComponentsTitle": "اختر المكونات",
+
+  "fallbackSomethingWentWrong": "حدث خطأ ما",
+  "roomDeletedSuccess": "تم حذف الغرفة {name}",
+  "@roomDeletedSuccess": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "actionFailedError": "فشل الإجراء: {error}",
+  "@actionFailedError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "roomImageEditorUploadFailed": "فشل الرفع",
+  "roomImageEditorRetryButton": "إعادة المحاولة",
+
+  "validatorsUsernameRequired": "اسم المستخدم مطلوب",
+  "validatorsUsernameNoSpaces": "لا يمكن أن يحتوي اسم المستخدم على مسافات",
+  "validatorsUsernameMinLength": "يجب أن يتكون اسم المستخدم من {length} أحرف على الأقل",
+  "@validatorsUsernameMinLength": {
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
+    }
+  },
+  "validatorsPasswordsDoNotMatch": "كلمات المرور غير متطابقة",
+  "validatorsFieldRequired": "هذا الحقل مطلوب",
+  "validatorsPasswordMinLength": "يجب أن تتكون كلمة المرور من {length} أحرف على الأقل",
+  "@validatorsPasswordMinLength": {
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
+    }
+  }
+}

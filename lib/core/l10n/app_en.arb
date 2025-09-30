@@ -1,0 +1,361 @@
+{
+    "@@locale": "en",
+    "language": "English",
+
+    "dashboard": "Dashboard",
+    "devices": "Devices",
+    "rooms": "Rooms",
+    "profile": "Profile",
+
+    "exitAndCancel": "Cancel",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "add": "Add",
+    "save": "Save",
+
+    "loginWelcomeBack": "Welcome back",
+    "loginButtonText": "Log in",
+    "loginDemoButton": "Demo account",
+    "loginNeedAccount": "Need an account? Register Now",
+    "loginLoggingIn": "Logging in...",
+
+    "signupCreateAccountTitle": "Create Your Account",
+    "signupButtonText": "Sign up",
+    "signupSignInInstead": "Sign in instead",
+    "signupCreatingAccount": "Creating account...",
+
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "username": "Username",
+    "enterUsername": "Enter username",
+
+    "dashboardLoadingComponents": "Loading components...",
+    "dashboardNoComponentsFound": "No components found",
+    "dashboardUnassignedRoom": "Unassigned",
+
+    "dashboardOptionsLayout": "Layout:",
+    "dashboardOptionsLayoutGrid": "Grid",
+    "dashboardOptionsLayoutList": "List",
+    "dashboardOptionsGroupBy": "Group by:",
+    "dashboardOptionsGroupByNone": "None",
+    "dashboardOptionsGroupByRoom": "Room",
+    "dashboardOptionsGroupByDevice": "Device",
+    "dashboardOptionsButtonOK": "OK",
+
+    "fingerprintManage": "Manage fingerprints",
+    "fingerprintScanHistory": "Scan history",
+
+    "latestActivities": "Latest Activities",
+    "flameSensorNoActivities": "No Activities yet",
+    "flameSensorFlameDetected": "Flame detected",
+
+    "stateIndicatorSyncing": "Syncing...",
+    "stateIndicatorSynced": "Synced",
+    "stateIndicatorError": "Error",
+
+    "morningHour": "{hour} AM",
+    "@morningHour": {
+        "placeholders": {
+            "hour": {
+                "type": "String"
+            }
+        }
+    },
+    "eveningHour": "{hour} PM",
+    "@eveningHour": {
+        "placeholders": {
+            "hour": {
+                "type": "String"
+            }
+        }
+    },
+
+    "componentPopupMenuRename": "Rename",
+    "componentPopupMenuChangeIcon": "Change icon",
+
+    "componentValueNoReadingsYet": "No readings yet",
+    "componentValueUnhandledComponent": "Unhandled Component",
+
+    "errorNoInternet": "No internet connection. Please check your network and try again.",
+    "errorConnectionTimeout": "Connection timeout. The server might be busy.",
+    "errorNetwork": "Network error: {errorMessage}",
+    "@errorNetwork": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorNetworkUnavailable": "Network unavailable. Please check your internet connection.",
+    "errorRequestTimedOut": "Request timed out. Please try again later.",
+    "errorNetworkIssue": "Network issue detected. Please check your connection.",
+    "errorAuthentication": "Authentication error: {errorMessage}",
+    "@errorAuthentication": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorDatabase": "Database error: {errorMessage}",
+    "@errorDatabase": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorStorage": "File storage error: {errorMessage}",
+    "@errorStorage": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorFailedSaveChanges": "Failed to save changes: {errorMessage}",
+    "@errorFailedSaveChanges": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorFailedPickImage": "Failed to pick image: {errorMessage}",
+    "@errorFailedPickImage": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorFailedLinkDevice": "Failed to link device: {errorMessage}",
+    "@errorFailedLinkDevice": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorLocationPermissionRequired": "Location permission is required for Wi-Fi configuration",
+    "errorPermissionDenied": "Permission has been denied, Manually allow location permission from settings.",
+    "errorInvalidInput": "Invalid input: {errorMessage}",
+    "@errorInvalidInput": {
+        "placeholders": {
+            "errorMessage": {
+                "type": "String"
+            }
+        }
+    },
+    "errorActionNotAllowed": "This action is not allowed on a demo account",
+    "errorUnexpected": "An unexpected error occurred.",
+
+    "dateToday": "Today",
+    "dateYesterday": "Yesterday",
+
+    "componentNameTemperature": "Temperature",
+    "componentNameHumidity": "Humidity",
+    "componentNameWaterLevel": "Water Level",
+    "componentNameGas": "Gas Detector",
+    "componentNameFlame": "Flame Sensor",
+    "componentNamePir": "Motion Sensor",
+    "componentNameLdr": "Light Sensor",
+    "componentNameFingerprint": "Fingerprint Scanner",
+    "componentNameWindow": "Window",
+    "componentNameDoor": "Door",
+    "componentNameLight": "Light",
+    "componentNameBuzzer": "Buzzer",
+    "componentNameSecurity": "Security System",
+
+    "devicesScreenTitle": "Your Devices",
+    "devicesScreenAddDeviceButton": "Add device",
+    "devicesScreenNeedInternetAccess": "You need internet access!",
+    "devicesScreenLoadingList": "Loading devices list...",
+    "devicesScreenUntitledDevice": "Untitled",
+
+    "linkDeviceModalAlreadyLinked": "This device is already linked to your account",
+    "linkDeviceModalLinkButton": "Link this device",
+
+    "newDeviceScreenWifiConfigHeader": "Connecting device to Wi-Fi network using ESP-Touch protocol",
+    "newDeviceScreenDeviceDiscoveryHeader": "Select the device you want to link from the list:",
+    "newDeviceScreenAppBarTitle": "Link a device",
+    "newDeviceScreenWifiNetworkNote": "Make sure you are connected to the same Wi-Fi network as the device you want to link.",
+    "newDeviceScreenLinkingDeviceProgress": "Linking device...",
+
+    "deviceDetailsUntitledDevice": "Untitled",
+    "deviceDetailsDeviceTypeLabel": "Device type",
+    "deviceDetailsMacAddressLabel": "MAC Address",
+    "deviceDetailsDateAddedLabel": "Date added",
+    "deviceDetailsSensorsLabel": "Sensors",
+    "deviceDetailsControlsLabel": "Controls",
+
+    "deviceDiscoveryMacAddressLabel": "MAC Address: ",
+    "deviceDiscoveryLinkedSuccess": "Device linked successfully",
+    "deviceDiscoveryLinkFailedTitle": "Failed to link device",
+    "deviceDiscoveryRefreshButton": "Refresh",
+    "deviceDiscoveryNoDevicesFound": "No devices found",
+    "deviceDiscoveryVpnWarning": "If you have a VPN running, turn it off then try again.",
+
+    "deviceQuickOptionsEditButton": "Edit",
+    "deviceQuickOptionsInfoButton": "Info",
+    "deviceQuickOptionsUnlinkButton": "Unlink",
+    "deviceQuickOptionsUnlinkDialogTitle": "Unlink {deviceNameOrType}",
+    "@deviceQuickOptionsUnlinkDialogTitle": {
+        "placeholders": {
+            "deviceNameOrType": {
+                "type": "String"
+            }
+        }
+    },
+    "deviceQuickOptionsUnlinkDialogMessage": "This will remove the device and all of its components from your account!",
+    "deviceQuickOptionsUnlinkDialogConfirmButton": "Unlink",
+    "deviceQuickOptionsUnlinkSuccessSnackbar": "Device unlinked successfully",
+    "deviceQuickOptionsRenameDialogTitle": "Rename Device",
+    "deviceQuickOptionsRenameSuccessSnackbar": "Device renamed to {newName}",
+    "@deviceQuickOptionsRenameSuccessSnackbar": {
+        "placeholders": {
+            "newName": {
+                "type": "String"
+            }
+        }
+    },
+    "deviceQuickOptionsRenameDialogHint": "Name",
+    "deviceQuickOptionsRenameDialogCancelButton": "Cancel",
+    "deviceQuickOptionsRenameDialogSaveButton": "Save",
+
+    "udpDeviceDetailsIpAddressLabel": "IP Address",
+
+    "wifiConfigCredentialsTitle": "Your WiFi Credentials:",
+    "wifiConfigSsidLabel": "SSID (Network name)",
+    "wifiConfigSsidNotFound": "Not found!",
+    "wifiConfigGetSsidButton": "Get SSID",
+    "wifiConfigInstructions": "On the device: Hold down the reset button for 3 seconds then tap \"Start Provisioning\" button.",
+    "wifiConfigStartProvisioningButton": "Start provisioning",
+    "wifiConfigMissingArgsSnackbar": "Missing arguments! Provisioning was not started.",
+    "wifiConfigProvisioningDialogTitle": "Provisioning",
+    "wifiConfigProvisioningDialogContent": "Provisioning started. Please wait...",
+    "wifiConfigStopButton": "Stop",
+    "wifiConfigDeviceProvisionedDialogTitle": "Device provisioned",
+    "wifiConfigDeviceProvisionedDialogContentSuccess": "Device successfully connected to the network",
+    "wifiConfigDeviceProvisionedDialogContentDeviceLabel": "Device:",
+    "wifiConfigDialogDeviceIp": "IP: {ipAddressText}",
+    "@wifiConfigDialogDeviceIp": {
+        "placeholders": {
+            "ipAddressText": {
+                "type": "String"
+            }
+        }
+    },
+    "wifiConfigDialogDeviceBssid": "BSSID: {bssidText}",
+    "@wifiConfigDialogDeviceBssid": {
+        "placeholders": {
+            "bssidText": {
+                "type": "String"
+            }
+        }
+    },
+    "wifiConfigSsidSnackbar": "SSID: {ssid}",
+    "@wifiConfigSsidSnackbar": {
+        "placeholders": {
+            "ssid": {
+                "type": "String"
+            }
+        }
+    },
+    "wifiConfigOpenSettingsButton": "Open settings",
+
+    "imageOptionsCameraButton": "Camera",
+    "imageOptionsGalleryButton": "Gallery",
+    "imageOptionsRemoveButton": "Remove",
+
+    "notificationsScreenTitle": "Notifications",
+    "notificationsScreenNoNotifications": "No notifications",
+    "notificationsScreenGroupThisWeek": "This Week",
+    "notificationsScreenGroupOlder": "Older",
+    "notificationsScreenLoading": "Loading notifications...",
+
+    "changePasswordScreenTitle": "Change Password",
+    "changePasswordCurrentPasswordLabel": "Current Password",
+    "changePasswordNewPasswordLabel": "New Password",
+    "changePasswordSuccessSnackbar": "Password changed successfully",
+
+    "editProfileScreenTitle": "Edit Profile",
+    "editProfileUploadingImage": "Uploading image...",
+    "editProfileUpdatingData": "Updating data...",
+    "editProfileSuccessSnackbar": "Profile was updated successfully.",
+    "editProfileConfirmationDialogSaveChanges": "Save Changes",
+
+    "profileActionsLogOut": "Log Out",
+    "appInfoLanguageLabel": "Language",
+    "appInfoContactSupport": "Contact support",
+    "changeLanguageDialogTitle": "Change Language",
+
+    "profileAddName": "Add a name",
+    "profileFailedToLoad": "Failed to load user information!",
+    "profileLoadingUserInformation": "Loading user information...",
+
+    "addRoomScreenTitle": "Add Room",
+    "roomsScreenTitle": "Rooms",
+    "roomsScreenAddRoomButton": "Add Room",
+
+    "deleteRoomDialogTitle": "Delete {name}?",
+    "@deleteRoomDialogTitle": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "deleteRoomDialogLoadingText": "Deleting room...",
+
+    "renameRoomDialogTitle": "Rename Room",
+    "renameRoomDialogNewNameLabel": "New name",
+    "renameRoomDialogEmptyNameError": "Name cannot be empty",
+    "roomPopupMenuDeleteRoom": "Delete room",
+
+    "componentsPickerLoadingComponents": "Loading components...",
+    "componentsPickerNoComponentsFound": "No smart components found",
+    "componentsPickerOtherDevices": "Other Devices",
+    "componentsPickerPickComponentsTitle": "Pick Components",
+
+    "fallbackSomethingWentWrong": "Something went wrong",
+    "roomDeletedSuccess": "Room {name} deleted",
+    "@roomDeletedSuccess": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "actionFailedError": "Action failed: {error}",
+    "@actionFailedError": {
+        "placeholders": {
+            "error": {
+                "type": "String"
+            }
+        }
+    },
+    "roomImageEditorUploadFailed": "Upload failed",
+    "roomImageEditorRetryButton": "Retry",
+
+    "validatorsUsernameRequired": "Username is required",
+    "validatorsUsernameNoSpaces": "Username cannot contain spaces",
+    "validatorsUsernameMinLength": "Username must be at least {length} characters",
+    "@validatorsUsernameMinLength": {
+        "placeholders": {
+            "length": {
+                "type": "int"
+            }
+        }
+    },
+    "validatorsPasswordsDoNotMatch": "Passwords do not match",
+    "validatorsFieldRequired": "This field is required",
+    "validatorsPasswordMinLength": "Password must be at least {length} characters",
+    "@validatorsPasswordMinLength": {
+        "placeholders": {
+            "length": {
+                "type": "int"
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+name: smart_home
+description: "A graduation project"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.2.1+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  supabase_flutter: ^2.8.4
+  esp_smartconfig: ^3.0.0
+  network_info_plus: ^7.0.0
+  permission_handler: ^12.0.0+1
+  udp: ^5.0.3
+  flutter_riverpod: ^3.0.0
+  riverpod_annotation: ^3.0.0
+  flutter_native_splash: ^2.4.6
+  go_router: ^16.0.0
+  shared_preferences: ^2.5.3
+  http: ^1.3.0
+  image_picker: ^1.1.2
+  image_cropper: ^9.1.0
+  flutter_svg: ^2.1.0
+  cached_network_image: ^3.4.1
+  mime: ^2.0.0
+  dotted_border: ^3.0.1
+  aes_crypt_null_safe: ^3.0.0
+  pointycastle: ^4.0.0
+  rename_app: ^1.6.5
+  flutter_launcher_icons: ^0.14.4
+  flutter_secure_storage: ^9.2.4
+  fl_chart: ^1.0.0
+  intl: ^0.20.2
+  firebase_core: ^4.0.0
+  firebase_messaging: ^16.0.0
+  device_info_plus: ^12.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^3.0.0
+  build_runner: ^2.4.15
+  custom_lint: ^0.8.0
+  riverpod_lint: ^3.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    # Images
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  fonts:
+    - family: AvantGarde
+      fonts:
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Medium.ttf
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Bold.ttf
+          weight: 700
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Medium-Oblique.ttf
+          style: italic
+        - asset: fonts/ITC-Avant-Garde-Gothic-LT-Bold-Oblique.ttf
+          style: italic
+          weight: 700
+    - family: Cairo
+      fonts:
+        - asset: fonts/Cairo-Medium.ttf
+        - asset: fonts/Cairo-Bold.ttf
+          weight: 700
+    - family: SmartHome
+      fonts:
+        - asset: fonts/SmartHome.ttf
