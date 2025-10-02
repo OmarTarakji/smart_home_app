@@ -39,7 +39,7 @@ The system allows users to **monitor sensors, control actuators, and manage mult
 
 ---
 
-## 📂 Project Structure (simplified)
+## 📂 Project Structure
 
 ```
 lib/
@@ -57,7 +57,7 @@ lib/
  │   ├── devices/
  │   ├── fingerprint/
  │   ├── images/
- │   ├── notifiecations/
+ │   ├── notifications/
  │   ├── profile/
  │   └── rooms/
  └── main.dart
@@ -83,20 +83,23 @@ flutter run
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Screenshot          
 
-- ![Dashboard screen tile view](screenshots/dashboard.gif)
-- ![Dashboard screen grid view](screenshots/dashboard-2.gif)
-- ![Dashboard screen dark mode](screenshots/dashboard-dark-mode.jpg)
-- ![Temperature sensor screen](screenshots/component-temperature-sensor.jpg)
-- ![Motion sensor screen](screenshots/component-motion-sensor.jpg)
-- ![light screen](screenshots/component-light.jpg)
-- ![Sign in screen](screenshots/auth.jpg)
-- ![Sign in screen dark mode](screenshots/auth-dark-mode.jpg)
-- ![Linked devices screen](screenshots/devices.jpg)
-- ![Provisioning & linking a device](screenshots/link-device.jpg)
-- ![Rooms screen](screenshots/rooms.jpg)
-- ![room-details screen](screenshots/rooms.jpg)
+<p>
+<img src="screenshots/dashboard-grid-view.gif" width=220/>
+<img src="screenshots/dashboard-tile-view.gif" width=220/>
+<img src="screenshots/link-a-device.gif" width=220/>
+</p>
+
+<p>
+<img src="screenshots/component-temperature-sensor.jpg" width=220/>
+<img src="screenshots/component-motion-sensor.jpg" width=220/>
+<img src="screenshots/component-light.jpg" width=220/>
+</p>
+<p align="center">
+<img src="screenshots/rooms.jpg" width=220/>
+<img src="screenshots/room.jpg" width=220/>
+</p>
 
 ---
 
