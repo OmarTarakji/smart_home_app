@@ -56,7 +56,7 @@ class TextFormatter {
     AppLocalizations l10n,
   ) {
     // Add AppLocalizations parameter
-    final formattedTime = DateFormat.jm([locale]).format(timestamp);
+    final formattedTime = DateFormat.jm().format(timestamp);
 
     final now = DateTime.now();
     final yesterday = DateTime(now.year, now.month, now.day - 1);

@@ -27,10 +27,7 @@ enum ComponentType {
   const ComponentType(this.icon, this.type, this.defaultImage);
 
   String getLocalizedName(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    // Fallback to enum name if AppLocalizations is not available,
-    // though in a correctly set up app, it should be.
-    if (l10n == null) return name;
+    final l10n = AppLocalizations.of(context)!;
 
     switch (this) {
       case ComponentType.temperature:

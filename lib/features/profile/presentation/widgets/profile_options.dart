@@ -74,7 +74,7 @@ class AppInfoSection extends ConsumerWidget {
           },
         ),
         SettingsItem(icon: Icons.help, label: l10n.appInfoContactSupport),
-        const SettingsItem(icon: Icons.info, label: 'Smart Home 1.1.1'),
+        const SettingsItem(icon: Icons.info, label: 'Smart Home 1.2.2'),
       ],
     );
   }

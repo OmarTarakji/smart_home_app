@@ -44,6 +44,22 @@
 
   "fingerprintManage": "إدارة بصمات الأصابع",
   "fingerprintScanHistory": "سجل المسح",
+  "fingerprintNoHistory": "لا يوجد سجل مسح",
+
+  "manageFingerprintsNote": "تتطلب إضافة/حذف بصمات الأصابع أن تكون متصلاً بنفس شبكة الواي فاي التي يتصل بها الجهاز الذكي.",
+  "fingerprintsErrorReloadButton": "أعد المحاولة",
+  "addFingerprintButton": "إضافة بصمة",
+  "fingerprintsMaxNumber": "وصلت إلى الحد الأقصى لعدد بصمات الأصابع",
+  "fingerprintsDeleteAllButton": "حذف الكل",
+  "fingerprintsDeleteDialog": "هل تريد حذف جميع بصمات الأصابع؟",
+  "fingerprintsDeleting":"جاري حذف جميع بصمات الأصابع...",
+  "fingerprintsDeleteAllError": "فشل حذف بصمات الأصابع",
+
+  "addFingerprintScreenTitle": "إضافة بصمة",
+  "fingerprintNameTitle": "الاسم:",
+  "fingerprintNameEmpty": "لا يمكن ترك هذا الحقل فارغاً",
+  "addFingerprintNext": "التالي",
+
 
   "latestActivities": "آخر النشاطات",
   "flameSensorNoActivities": "لا توجد أنشطة بعد",
@@ -152,6 +168,8 @@
 
   "dateToday": "اليوم",
   "dateYesterday": "الأمس",
+  "dateThisWeek": "هذا الأسبوع",
+  "dateOlder": "أقدم",
 
   "componentNameTemperature": "درجة الحرارة",
   "componentNameHumidity": "الرطوبة",
@@ -166,6 +184,62 @@
   "componentNameLight": "ضوء",
   "componentNameBuzzer": "جرس",
   "componentNameSecurity": "نظام الأمن",
+
+  "readingOneDayAgo": "منذ يوم",
+  "readingTwoDaysAgo": "منذ يومين",
+  "readingDaysAgo": "منذ {days} أيام",
+  "@readingDaysAgo": {
+    "placeholder": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "readingOneHourAgo": "منذ ساعة",
+  "readingTwoHoursAgo": "منذ ساعتين",
+  "readingHoursAgo": "منذ {hours} ساعات",
+  "@readingHoursAgo": {
+    "placeholder": {
+      "hours": {
+        "type": "String"
+      }
+    }
+  },
+  "readingNow": "الآن",
+  "readingOneMinuteAgo": "قبل قليل",
+  "readingMinutesAgoPlural": "منذ {minutes} دقائق",
+  "@readingMinutesAgoPlural": {
+    "placeholder": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "readingMinutesAgo": "منذ {minutes} دقيقة",
+  "@readingMinutesAgo": {
+    "placeholder": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "readingSafe": "آمن",
+  "readingRecently": "قبل قليل",
+  "readingWarning": "تحذير",
+  "readingDanger": "خطر",
+
+  "readingLightVeryBright": "ساطع جدًا",
+  "readingLightBright": "ساطع",
+  "readingLightModerate": "متوسط",
+  "readingLightDim": "خافت",
+  "readingLightDark": "مظلم",
+
+  "toggleTypeLightOff": "مطفئ",
+  "toggleTypeLightOn": "مشغل",
+  "toggleTypeOpenableOff": "فتح",
+  "toggleTypeOpenableOn": "إغلاق",
+  "toggleSecurityOff": "مطفئ",
+  "toggleSecurityOn": "مفعل",
 
   "devicesScreenTitle": "أجهزتك",
   "devicesScreenAddDeviceButton": "إضافة جهاز",

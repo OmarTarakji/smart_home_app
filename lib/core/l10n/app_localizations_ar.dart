@@ -33,6 +33,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get loading => 'جاري التحميل...';
 
   @override
+  String get saving => 'Saving...';
+
+  @override
   String get add => 'إضافة';
 
   @override
@@ -115,6 +118,58 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get fingerprintScanHistory => 'سجل المسح';
+
+  @override
+  String get fingerprintNoHistory => 'لا يوجد سجل مسح';
+
+  @override
+  String get manageFingerprintsNote =>
+      'تتطلب إضافة/حذف بصمات الأصابع أن تكون متصلاً بنفس شبكة الواي فاي التي يتصل بها الجهاز الذكي.';
+
+  @override
+  String get fingerprintsErrorReloadButton => 'أعد المحاولة';
+
+  @override
+  String get fingerprintAddButton => 'Add fingerprint';
+
+  @override
+  String get fingerprintsMaxNumber => 'وصلت إلى الحد الأقصى لعدد بصمات الأصابع';
+
+  @override
+  String get fingerprintsDeleteAllButton => 'حذف الكل';
+
+  @override
+  String get fingerprintsDeleteDialog => 'هل تريد حذف جميع بصمات الأصابع؟';
+
+  @override
+  String get fingerprintsDeleting => 'جاري حذف جميع بصمات الأصابع...';
+
+  @override
+  String get fingerprintsDeleteAllError => 'فشل حذف بصمات الأصابع';
+
+  @override
+  String fingerprintDelete(String name) {
+    return 'Delete \$$name';
+  }
+
+  @override
+  String get fingerprintDeleteDialog =>
+      'Do you want to delete this fingerprint?';
+
+  @override
+  String get fingerprintDeleting => 'Deleting fingerprint...';
+
+  @override
+  String get addFingerprintScreenTitle => 'إضافة بصمة';
+
+  @override
+  String get fingerprintNameTitle => 'الاسم:';
+
+  @override
+  String get fingerprintNameEmpty => 'لا يمكن ترك هذا الحقل فارغاً';
+
+  @override
+  String get addFingerprintNext => 'التالي';
 
   @override
   String get latestActivities => 'آخر النشاطات';
@@ -238,6 +293,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get dateYesterday => 'الأمس';
 
   @override
+  String get dateThisWeek => 'هذا الأسبوع';
+
+  @override
+  String get dateOlder => 'أقدم';
+
+  @override
   String get componentNameTemperature => 'درجة الحرارة';
 
   @override
@@ -275,6 +336,89 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get componentNameSecurity => 'نظام الأمن';
+
+  @override
+  String get readingOneDayAgo => 'منذ يوم';
+
+  @override
+  String get readingTwoDaysAgo => 'منذ يومين';
+
+  @override
+  String readingDaysAgo(Object days) {
+    return 'منذ $days أيام';
+  }
+
+  @override
+  String get readingOneHourAgo => 'منذ ساعة';
+
+  @override
+  String get readingTwoHoursAgo => 'منذ ساعتين';
+
+  @override
+  String readingHoursAgo(Object hours) {
+    return 'منذ $hours ساعات';
+  }
+
+  @override
+  String get readingNow => 'الآن';
+
+  @override
+  String get readingOneMinuteAgo => 'قبل قليل';
+
+  @override
+  String readingMinutesAgoPlural(Object minutes) {
+    return 'منذ $minutes دقائق';
+  }
+
+  @override
+  String readingMinutesAgo(Object minutes) {
+    return 'منذ $minutes دقيقة';
+  }
+
+  @override
+  String get readingSafe => 'آمن';
+
+  @override
+  String get readingRecently => 'قبل قليل';
+
+  @override
+  String get readingWarning => 'تحذير';
+
+  @override
+  String get readingDanger => 'خطر';
+
+  @override
+  String get readingLightVeryBright => 'ساطع جدًا';
+
+  @override
+  String get readingLightBright => 'ساطع';
+
+  @override
+  String get readingLightModerate => 'متوسط';
+
+  @override
+  String get readingLightDim => 'خافت';
+
+  @override
+  String get readingLightDark => 'مظلم';
+
+  @override
+  String get toggleTypeLightOff => 'مطفئ';
+
+  @override
+  String get toggleTypeLightOn => 'مشغل';
+
+  @override
+  String get toggleTypeOpenableOff => 'فتح';
+
+  @override
+  String get toggleTypeOpenableOn => 'إغلاق';
+
+  @override
+  String get toggleSecurityOff => 'مطفئ';
+
+  @override
+  String get toggleSecurityOn => 'مفعل';
 
   @override
   String get devicesScreenTitle => 'أجهزتك';

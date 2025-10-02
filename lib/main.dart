@@ -42,7 +42,6 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedLanguage = ref.watch(selectedLanguageProvider);
-
     TextTheme textTheme =
         selectedLanguage.languageCode == 'ar'
             ? createTextTheme(context, 'Cairo', 'Cairo')

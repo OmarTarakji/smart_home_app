@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home/core/l10n/app_localizations.dart';
 
 class LDRReading extends StatelessWidget {
   const LDRReading({required this.value, this.fontSize, super.key});
@@ -37,21 +38,23 @@ class LDRReading extends StatelessWidget {
     final List<Color> currentGradient =
         isDarkMode ? darkModeGradient : lightModeGradient;
 
+    final l10n = AppLocalizations.of(context)!;
+
     switch (reading) {
       case > 3995:
-        text = 'Very Bright';
+        text = l10n.readingLightVeryBright;
         color = currentGradient[0];
       case > 2996:
-        text = 'Bright';
+        text = l10n.readingLightBright;
         color = currentGradient[1];
       case > 2296:
-        text = 'Moderate';
+        text = l10n.readingLightModerate;
         color = currentGradient[2];
       case > 296:
-        text = 'Low light';
+        text = l10n.readingLightDim;
         color = currentGradient[3];
       default:
-        text = 'Dark';
+        text = l10n.readingLightDark;
         color = currentGradient[4];
     }
 

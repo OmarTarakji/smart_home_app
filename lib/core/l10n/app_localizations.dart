@@ -146,6 +146,12 @@ abstract class AppLocalizations {
   /// **'Loading...'**
   String get loading;
 
+  /// No description provided for @saving.
+  ///
+  /// In en, this message translates to:
+  /// **'Saving...'**
+  String get saving;
+
   /// No description provided for @add.
   ///
   /// In en, this message translates to:
@@ -313,6 +319,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Scan history'**
   String get fingerprintScanHistory;
+
+  /// No description provided for @fingerprintNoHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'No scan history'**
+  String get fingerprintNoHistory;
+
+  /// No description provided for @manageFingerprintsNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding/Deleting fingerprints requires you to be connected to the same Wi-Fi network as the smart device.'**
+  String get manageFingerprintsNote;
+
+  /// No description provided for @fingerprintsErrorReloadButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get fingerprintsErrorReloadButton;
+
+  /// No description provided for @fingerprintAddButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Add fingerprint'**
+  String get fingerprintAddButton;
+
+  /// No description provided for @fingerprintsMaxNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum number of fingerprints reached'**
+  String get fingerprintsMaxNumber;
+
+  /// No description provided for @fingerprintsDeleteAllButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete all'**
+  String get fingerprintsDeleteAllButton;
+
+  /// No description provided for @fingerprintsDeleteDialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete all fingerprints?'**
+  String get fingerprintsDeleteDialog;
+
+  /// No description provided for @fingerprintsDeleting.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleting all fingerprints...'**
+  String get fingerprintsDeleting;
+
+  /// No description provided for @fingerprintsDeleteAllError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to delete fingerprints'**
+  String get fingerprintsDeleteAllError;
+
+  /// No description provided for @fingerprintDelete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete \${name}'**
+  String fingerprintDelete(String name);
+
+  /// No description provided for @fingerprintDeleteDialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you want to delete this fingerprint?'**
+  String get fingerprintDeleteDialog;
+
+  /// No description provided for @fingerprintDeleting.
+  ///
+  /// In en, this message translates to:
+  /// **'Deleting fingerprint...'**
+  String get fingerprintDeleting;
+
+  /// No description provided for @addFingerprintScreenTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Fingerprint'**
+  String get addFingerprintScreenTitle;
+
+  /// No description provided for @fingerprintNameTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Name:'**
+  String get fingerprintNameTitle;
+
+  /// No description provided for @fingerprintNameEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'This field cannot be empty'**
+  String get fingerprintNameEmpty;
+
+  /// No description provided for @addFingerprintNext.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get addFingerprintNext;
 
   /// No description provided for @latestActivities.
   ///
@@ -500,6 +602,18 @@ abstract class AppLocalizations {
   /// **'Yesterday'**
   String get dateYesterday;
 
+  /// No description provided for @dateThisWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'This week'**
+  String get dateThisWeek;
+
+  /// No description provided for @dateOlder.
+  ///
+  /// In en, this message translates to:
+  /// **'Older'**
+  String get dateOlder;
+
   /// No description provided for @componentNameTemperature.
   ///
   /// In en, this message translates to:
@@ -577,6 +691,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Security System'**
   String get componentNameSecurity;
+
+  /// No description provided for @readingOneDayAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'1 day ago'**
+  String get readingOneDayAgo;
+
+  /// No description provided for @readingTwoDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'2 days ago'**
+  String get readingTwoDaysAgo;
+
+  /// No description provided for @readingDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{days} days ago'**
+  String readingDaysAgo(Object days);
+
+  /// No description provided for @readingOneHourAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'1 hour ago'**
+  String get readingOneHourAgo;
+
+  /// No description provided for @readingTwoHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'2 hours ago'**
+  String get readingTwoHoursAgo;
+
+  /// No description provided for @readingHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} hours ago'**
+  String readingHoursAgo(Object hours);
+
+  /// No description provided for @readingNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Now'**
+  String get readingNow;
+
+  /// No description provided for @readingOneMinuteAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently'**
+  String get readingOneMinuteAgo;
+
+  /// No description provided for @readingMinutesAgoPlural.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} minutes ago'**
+  String readingMinutesAgoPlural(Object minutes);
+
+  /// No description provided for @readingMinutesAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} minutes ago'**
+  String readingMinutesAgo(Object minutes);
+
+  /// No description provided for @readingSafe.
+  ///
+  /// In en, this message translates to:
+  /// **'Safe'**
+  String get readingSafe;
+
+  /// No description provided for @readingRecently.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently'**
+  String get readingRecently;
+
+  /// No description provided for @readingWarning.
+  ///
+  /// In en, this message translates to:
+  /// **'Warning'**
+  String get readingWarning;
+
+  /// No description provided for @readingDanger.
+  ///
+  /// In en, this message translates to:
+  /// **'Danger'**
+  String get readingDanger;
+
+  /// No description provided for @readingLightVeryBright.
+  ///
+  /// In en, this message translates to:
+  /// **'Very Bright'**
+  String get readingLightVeryBright;
+
+  /// No description provided for @readingLightBright.
+  ///
+  /// In en, this message translates to:
+  /// **'Bright'**
+  String get readingLightBright;
+
+  /// No description provided for @readingLightModerate.
+  ///
+  /// In en, this message translates to:
+  /// **'Moderate'**
+  String get readingLightModerate;
+
+  /// No description provided for @readingLightDim.
+  ///
+  /// In en, this message translates to:
+  /// **'Dim'**
+  String get readingLightDim;
+
+  /// No description provided for @readingLightDark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get readingLightDark;
+
+  /// No description provided for @toggleTypeLightOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get toggleTypeLightOff;
+
+  /// No description provided for @toggleTypeLightOn.
+  ///
+  /// In en, this message translates to:
+  /// **'On'**
+  String get toggleTypeLightOn;
+
+  /// No description provided for @toggleTypeOpenableOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Open'**
+  String get toggleTypeOpenableOff;
+
+  /// No description provided for @toggleTypeOpenableOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get toggleTypeOpenableOn;
+
+  /// No description provided for @toggleSecurityOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get toggleSecurityOff;
+
+  /// No description provided for @toggleSecurityOn.
+  ///
+  /// In en, this message translates to:
+  /// **'On'**
+  String get toggleSecurityOn;
 
   /// No description provided for @devicesScreenTitle.
   ///

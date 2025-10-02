@@ -33,6 +33,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get loading => 'Loading...';
 
   @override
+  String get saving => 'Saving...';
+
+  @override
   String get add => 'Add';
 
   @override
@@ -115,6 +118,58 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fingerprintScanHistory => 'Scan history';
+
+  @override
+  String get fingerprintNoHistory => 'No scan history';
+
+  @override
+  String get manageFingerprintsNote =>
+      'Adding/Deleting fingerprints requires you to be connected to the same Wi-Fi network as the smart device.';
+
+  @override
+  String get fingerprintsErrorReloadButton => 'Try again';
+
+  @override
+  String get fingerprintAddButton => 'Add fingerprint';
+
+  @override
+  String get fingerprintsMaxNumber => 'Maximum number of fingerprints reached';
+
+  @override
+  String get fingerprintsDeleteAllButton => 'Delete all';
+
+  @override
+  String get fingerprintsDeleteDialog => 'Delete all fingerprints?';
+
+  @override
+  String get fingerprintsDeleting => 'Deleting all fingerprints...';
+
+  @override
+  String get fingerprintsDeleteAllError => 'Failed to delete fingerprints';
+
+  @override
+  String fingerprintDelete(String name) {
+    return 'Delete \$$name';
+  }
+
+  @override
+  String get fingerprintDeleteDialog =>
+      'Do you want to delete this fingerprint?';
+
+  @override
+  String get fingerprintDeleting => 'Deleting fingerprint...';
+
+  @override
+  String get addFingerprintScreenTitle => 'Add Fingerprint';
+
+  @override
+  String get fingerprintNameTitle => 'Name:';
+
+  @override
+  String get fingerprintNameEmpty => 'This field cannot be empty';
+
+  @override
+  String get addFingerprintNext => 'Next';
 
   @override
   String get latestActivities => 'Latest Activities';
@@ -238,6 +293,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dateYesterday => 'Yesterday';
 
   @override
+  String get dateThisWeek => 'This week';
+
+  @override
+  String get dateOlder => 'Older';
+
+  @override
   String get componentNameTemperature => 'Temperature';
 
   @override
@@ -275,6 +336,89 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get componentNameSecurity => 'Security System';
+
+  @override
+  String get readingOneDayAgo => '1 day ago';
+
+  @override
+  String get readingTwoDaysAgo => '2 days ago';
+
+  @override
+  String readingDaysAgo(Object days) {
+    return '$days days ago';
+  }
+
+  @override
+  String get readingOneHourAgo => '1 hour ago';
+
+  @override
+  String get readingTwoHoursAgo => '2 hours ago';
+
+  @override
+  String readingHoursAgo(Object hours) {
+    return '$hours hours ago';
+  }
+
+  @override
+  String get readingNow => 'Now';
+
+  @override
+  String get readingOneMinuteAgo => 'Recently';
+
+  @override
+  String readingMinutesAgoPlural(Object minutes) {
+    return '$minutes minutes ago';
+  }
+
+  @override
+  String readingMinutesAgo(Object minutes) {
+    return '$minutes minutes ago';
+  }
+
+  @override
+  String get readingSafe => 'Safe';
+
+  @override
+  String get readingRecently => 'Recently';
+
+  @override
+  String get readingWarning => 'Warning';
+
+  @override
+  String get readingDanger => 'Danger';
+
+  @override
+  String get readingLightVeryBright => 'Very Bright';
+
+  @override
+  String get readingLightBright => 'Bright';
+
+  @override
+  String get readingLightModerate => 'Moderate';
+
+  @override
+  String get readingLightDim => 'Dim';
+
+  @override
+  String get readingLightDark => 'Dark';
+
+  @override
+  String get toggleTypeLightOff => 'Off';
+
+  @override
+  String get toggleTypeLightOn => 'On';
+
+  @override
+  String get toggleTypeOpenableOff => 'Open';
+
+  @override
+  String get toggleTypeOpenableOn => 'Close';
+
+  @override
+  String get toggleSecurityOff => 'Off';
+
+  @override
+  String get toggleSecurityOn => 'On';
 
   @override
   String get devicesScreenTitle => 'Your Devices';

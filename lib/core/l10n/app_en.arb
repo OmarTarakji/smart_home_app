@@ -10,6 +10,7 @@
     "exitAndCancel": "Cancel",
     "delete": "Delete",
     "loading": "Loading...",
+    "saving": "Saving...",
     "add": "Add",
     "save": "Save",
 
@@ -44,6 +45,31 @@
 
     "fingerprintManage": "Manage fingerprints",
     "fingerprintScanHistory": "Scan history",
+    "fingerprintNoHistory": "No scan history",
+
+    "manageFingerprintsNote": "Adding/Deleting fingerprints requires you to be connected to the same Wi-Fi network as the smart device.",
+    "fingerprintsErrorReloadButton": "Try again",
+    "fingerprintAddButton": "Add fingerprint",
+    "fingerprintsMaxNumber": "Maximum number of fingerprints reached",
+    "fingerprintsDeleteAllButton": "Delete all",
+    "fingerprintsDeleteDialog": "Delete all fingerprints?",
+    "fingerprintsDeleting":"Deleting all fingerprints...",
+    "fingerprintsDeleteAllError": "Failed to delete fingerprints",
+    "fingerprintDelete": "Delete ${name}",
+    "@fingerprintDelete": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+    "fingerprintDeleteDialog": "Do you want to delete this fingerprint?",
+    "fingerprintDeleting": "Deleting fingerprint...",
+
+    "addFingerprintScreenTitle": "Add Fingerprint",
+    "fingerprintNameTitle": "Name:",
+    "fingerprintNameEmpty": "This field cannot be empty",
+    "addFingerprintNext": "Next",
 
     "latestActivities": "Latest Activities",
     "flameSensorNoActivities": "No Activities yet",
@@ -152,6 +178,8 @@
 
     "dateToday": "Today",
     "dateYesterday": "Yesterday",
+    "dateThisWeek": "This week",
+    "dateOlder": "Older",
 
     "componentNameTemperature": "Temperature",
     "componentNameHumidity": "Humidity",
@@ -166,6 +194,62 @@
     "componentNameLight": "Light",
     "componentNameBuzzer": "Buzzer",
     "componentNameSecurity": "Security System",
+
+    "readingOneDayAgo": "1 day ago",
+    "readingTwoDaysAgo": "2 days ago",
+    "readingDaysAgo": "{days} days ago",
+    "@readingDaysAgo": {
+        "placeholder": {
+            "days": {
+                "type": "String"
+            }
+        }
+    },
+    "readingOneHourAgo": "1 hour ago",
+    "readingTwoHoursAgo": "2 hours ago",
+    "readingHoursAgo": "{hours} hours ago",
+    "@readingHoursAgo": {
+        "placeholder": {
+            "hours": {
+                "type": "String"
+            }
+        }
+    },
+    "readingNow": "Now",
+    "readingOneMinuteAgo": "Recently",
+    "readingMinutesAgoPlural": "{minutes} minutes ago",
+    "@readingMinutesAgoPlural": {
+        "placeholder": {
+            "minutes": {
+                "type": "String"
+            }
+        }
+    },
+    "readingMinutesAgo": "{minutes} minutes ago",
+    "@readingMinutesAgo": {
+        "placeholder": {
+            "minutes": {
+                "type": "String"
+            }
+        }
+    },
+    "readingSafe": "Safe",
+    "readingRecently": "Recently",
+    "readingWarning": "Warning",
+    "readingDanger": "Danger",
+
+    "readingLightVeryBright": "Very Bright",
+    "readingLightBright": "Bright",
+    "readingLightModerate": "Moderate",
+    "readingLightDim": "Dim",
+    "readingLightDark": "Dark",
+
+    "toggleTypeLightOff": "Off",
+    "toggleTypeLightOn": "On",
+    "toggleTypeOpenableOff": "Open",
+    "toggleTypeOpenableOn": "Close",
+    "toggleSecurityOff": "Off",
+    "toggleSecurityOn": "On",
 
     "devicesScreenTitle": "Your Devices",
     "devicesScreenAddDeviceButton": "Add device",

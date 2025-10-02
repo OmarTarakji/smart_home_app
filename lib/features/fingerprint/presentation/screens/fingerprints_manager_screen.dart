@@ -22,16 +22,14 @@ class FingerprintsManagerScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
     final fingerprintsAsync = ref.watch(
       componentFingerprintsProvider(componentId),
     );
     final editingState = ref.watch(editingFingerprintStateProvider);
 
     final screen = Scaffold(
-      appBar: AppBar(
-        title: const Text('Saved Fingerprints'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text(''), centerTitle: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(12.0),
@@ -46,7 +44,7 @@ class FingerprintsManagerScreen extends ConsumerWidget {
                 ),
               ),
               Text(
-                'Adding/Deleting fingerprints requires you to be connected to the same Wi-Fi network as the smart device.',
+                l10n.manageFingerprintsNote,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: Theme.of(context).colorScheme.onTertiaryContainer,
                 ),
@@ -97,7 +95,7 @@ class FingerprintsManagerScreen extends ConsumerWidget {
           onPressed: () {
             ref.invalidate(componentFingerprintsProvider(componentId));
           },
-          child: const Text('Try again'),
+          child: Text(l10n.fingerprintsErrorReloadButton),
         ),
       ],
     );
@@ -108,6 +106,8 @@ class FingerprintsManagerScreen extends ConsumerWidget {
     BuildContext context,
     WidgetRef ref,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Column(
       spacing: 16,
       children: [
@@ -132,9 +132,9 @@ class FingerprintsManagerScreen extends ConsumerWidget {
                   ref.invalidate(componentFingerprintsProvider(componentId));
                 }
               },
-              child: const Text('Add fingerprint'),
+              child: Text(l10n.fingerprintAddButton),
             )
-            : const Text('Reached maximum number of fingerprints'),
+            : Text(l10n.fingerprintsMaxNumber),
         if (fingerprints.isNotEmpty)
           FilledButton(
             onPressed: () => _onDeleteAllPressed(context, ref),
@@ -142,7 +142,7 @@ class FingerprintsManagerScreen extends ConsumerWidget {
               backgroundColor: Theme.of(context).colorScheme.error,
               foregroundColor: Theme.of(context).colorScheme.onError,
             ),
-            child: const Text('Delete all'),
+            child: Text(l10n.fingerprintsDeleteAllButton),
           ),
       ],
     );
@@ -155,10 +155,10 @@ class FingerprintsManagerScreen extends ConsumerWidget {
         await showDialog(
           context: context,
           builder:
-              (context) => const ConfirmDeleteDialog(
-                title: 'Delete all fingerprints?',
+              (context) => ConfirmDeleteDialog(
+                title: l10n.fingerprintsDeleteDialog,
                 message: '',
-                confirmText: 'Delete',
+                confirmText: l10n.delete,
               ),
         ) ??
         false;
@@ -167,12 +167,12 @@ class FingerprintsManagerScreen extends ConsumerWidget {
       componentFingerprintsProvider(componentId).notifier,
     );
     final stateNotifier = ref.read(editingFingerprintStateProvider.notifier);
-    stateNotifier.setState('Deleting all fingerprints...');
+    stateNotifier.setState(l10n.fingerprintsDeleting);
     try {
       await notifier.deleteAll();
     } on FingerprintException catch (e) {
       if (context.mounted) {
-        context.showErrorDialog('Failed to delete fingerprints', e.message);
+        context.showErrorDialog(l10n.fingerprintsDeleteAllError, e.message);
       }
     } catch (e) {
       if (context.mounted) {

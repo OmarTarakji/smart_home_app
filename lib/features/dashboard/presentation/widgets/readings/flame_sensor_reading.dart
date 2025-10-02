@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/theme/app_colors.dart';
 
 class FlameSensorReading extends StatefulWidget {
@@ -16,7 +17,8 @@ class _FlameSensorReadingState extends State<FlameSensorReading> {
 
   @override
   Widget build(BuildContext context) {
-    final (Color color, String text) = properties;
+    final l10n = AppLocalizations.of(context)!;
+    final (Color color, String text) = getProperties(l10n);
 
     return FittedBox(
       fit: BoxFit.scaleDown,
@@ -38,15 +40,15 @@ class _FlameSensorReadingState extends State<FlameSensorReading> {
     super.dispose();
   }
 
-  (Color, String) get properties {
+  (Color, String) getProperties(AppLocalizations l10n) {
     if (widget.timestamp == null || _isBefore(minutes: 10)) {
-      return (AppColors.safe, 'Safe');
+      return (AppColors.safe, l10n.readingSafe);
     } else if (_isBefore(minutes: 1)) {
       _scheduleRefresh(minutes: 10);
-      return (AppColors.warning, 'Recent activity');
+      return (AppColors.warning, l10n.readingRecently);
     } else {
       _scheduleRefresh(minutes: 1);
-      return (AppColors.danger, 'Danger!');
+      return (AppColors.danger, l10n.readingDanger);
     }
   }
 

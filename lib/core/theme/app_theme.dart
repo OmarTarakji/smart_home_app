@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'app_colors.dart';
 
@@ -16,13 +17,13 @@ class AppTheme {
       displayColor: AppColors.lightColorScheme.onSurface,
     ),
 
-    // appBarTheme: AppBarTheme(
-    //   systemOverlayStyle: SystemUiOverlayStyle(
-    //     statusBarIconBrightness: Brightness.dark,
-    //     systemNavigationBarIconBrightness: Brightness.dark,
-    //     systemNavigationBarColor: AppColors.lightColorScheme.surface,
-    //   ),
-    // ),
+    appBarTheme: AppBarTheme(
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarIconBrightness: Brightness.dark,
+        systemNavigationBarIconBrightness: Brightness.dark,
+        systemNavigationBarColor: AppColors.lightColorScheme.surface,
+      ),
+    ),
     popupMenuTheme: PopupMenuThemeData(
       elevation: 10,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

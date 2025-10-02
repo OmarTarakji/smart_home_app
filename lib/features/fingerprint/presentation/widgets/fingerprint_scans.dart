@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
 
 import '../../application/latest_scans_provider.dart';
@@ -13,11 +14,12 @@ class FingerprintScans extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
     final scansAsync = ref.watch(latestScansProvider(componentId));
     return scansAsync.when(
       data: (scans) {
         if (scans.isEmpty) {
-          return const Center(child: Text('No scan history'));
+          return Center(child: Text(l10n.fingerprintNoHistory));
         }
 
         final now = DateTime.now();
@@ -48,13 +50,13 @@ class FingerprintScans extends ConsumerWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           children: [
             if (today.isNotEmpty)
-              FingerprintScanGroup(title: 'Today', scans: today),
+              FingerprintScanGroup(title: l10n.dateToday, scans: today),
             if (yesterday.isNotEmpty)
-              FingerprintScanGroup(title: 'Yesterday', scans: yesterday),
+              FingerprintScanGroup(title: l10n.dateYesterday, scans: yesterday),
             if (thisWeek.isNotEmpty)
-              FingerprintScanGroup(title: 'This Week', scans: thisWeek),
+              FingerprintScanGroup(title: l10n.dateThisWeek, scans: thisWeek),
             if (older.isNotEmpty)
-              FingerprintScanGroup(title: 'Older', scans: older),
+              FingerprintScanGroup(title: l10n.dateOlder, scans: older),
           ],
         );
       },

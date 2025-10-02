@@ -49,13 +49,13 @@ class _AddFingerprintScreenState extends ConsumerState<AddFingerprintScreen> {
     );
     final addResponse = ref.watch(addFingerprintProvider);
     final body = Scaffold(
-      appBar: AppBar(title: const Text('Add Fingerprint')),
+      appBar: AppBar(title: Text(l10n.addFingerprintScreenTitle)),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
             Text(
-              '   Fingerprint name:',
+              '   ${l10n.fingerprintNameTitle}',
               style: Theme.of(context).textTheme.bodySmall,
             ),
             const SizedBox(height: 5),
@@ -63,7 +63,6 @@ class _AddFingerprintScreenState extends ConsumerState<AddFingerprintScreen> {
               controller: _controller,
               autofocus: true,
               decoration: InputDecoration(
-                hintText: 'fingerprint',
                 suffixIcon: IconButton(
                   onPressed: _controller.clear,
                   icon: const Icon(Icons.clear),
@@ -76,7 +75,7 @@ class _AddFingerprintScreenState extends ConsumerState<AddFingerprintScreen> {
             FilledButton(
               onPressed: () async {
                 if (_controller.text.isEmpty) {
-                  setState(() => nameError = 'this field cannot be empty');
+                  setState(() => nameError = l10n.fingerprintNameEmpty);
                 } else {
                   try {
                     await notifier.enrollFingerprint(
@@ -93,7 +92,7 @@ class _AddFingerprintScreenState extends ConsumerState<AddFingerprintScreen> {
                   }
                 }
               },
-              child: const Text('Next'),
+              child: Text(l10n.addFingerprintNext),
             ),
           ],
         ),

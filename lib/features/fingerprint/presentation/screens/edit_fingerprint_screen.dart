@@ -35,6 +35,7 @@ class _EditFingerprintScreenState extends ConsumerState<EditFingerprintScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final editingState = ref.watch(editingFingerprintStateProvider);
     final screen = Scaffold(
       appBar: AppBar(
@@ -61,14 +62,13 @@ class _EditFingerprintScreenState extends ConsumerState<EditFingerprintScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '   Change fingerprint name',
+                  '   ${l10n.fingerprintNameTitle}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 const SizedBox(height: 5),
                 TextField(
                   controller: _controller,
                   decoration: InputDecoration(
-                    hintText: 'name',
                     suffixIcon: IconButton(
                       onPressed: _controller.clear,
                       icon: const Icon(Icons.clear),
@@ -109,10 +109,10 @@ class _EditFingerprintScreenState extends ConsumerState<EditFingerprintScreen> {
         if (_controller.text == widget.fingerprint.name) {
           context.pop();
         } else if (_controller.text.isEmpty) {
-          setState(() => nameError = 'this field cannot be empty');
+          setState(() => nameError = l10n.fingerprintNameEmpty);
         } else {
           if (nameError != null) setState(() => nameError = null);
-          stateNotifier.setState('Renaming fingerprint...');
+          stateNotifier.setState(l10n.saving);
           try {
             await notifier.renameFingerprint(
               widget.fingerprint.id,
@@ -147,14 +147,14 @@ class _EditFingerprintScreenState extends ConsumerState<EditFingerprintScreen> {
               context: context,
               builder:
                   (context) => ConfirmDeleteDialog(
-                    title: 'Delete ${widget.fingerprint.name}',
-                    message: 'Do you want to delete this fingerprint?',
-                    confirmText: 'Delete',
+                    title: l10n.fingerprintDelete(widget.fingerprint.name),
+                    message: l10n.fingerprintDeleteDialog,
+                    confirmText: l10n.delete,
                   ),
             ) ??
             false;
         if (delete) {
-          stateNotifier.setState('Deleting fingerprint...');
+          stateNotifier.setState(l10n.fingerprintDeleting);
           try {
             await notifier.deleteFingerprint(
               widget.fingerprint.sensorFingerprintId,
@@ -174,7 +174,7 @@ class _EditFingerprintScreenState extends ConsumerState<EditFingerprintScreen> {
         }
       },
       icon: const Icon(Icons.delete_forever_rounded),
-      label: const Text('Delete'),
+      label: Text(l10n.delete),
       style: FilledButton.styleFrom(
         backgroundColor: Theme.of(context).colorScheme.errorContainer,
         foregroundColor: Theme.of(context).colorScheme.onErrorContainer,
