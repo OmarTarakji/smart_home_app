@@ -86,18 +86,16 @@ flutter run
 ## 🖼️ Screenshot          
 
 <p>
-    <img src="screenshots/dashboard-grid-view.gif" style="width: 220px;"/>
-    <img src="screenshots/dashboard-tile-view.gif" style="width: 220px;"/>
-    <img src="screenshots/link-a-device.gif" style="width: 220px;"/>
+    <img src="screenshots/dashboard-grid-view.gif" style="width: 230px;"/>
+    <img src="screenshots/dashboard-tile-view.gif" style="width: 230px;"/>
+    <img src="screenshots/link-a-device.gif" style="width: 230px;"/>
 </p>
 <p>
-    <img src="screenshots/component-temperature-sensor.jpg" width=220px/>
-    <img src="screenshots/component-motion-sensor.jpg" width=220px/>
-    <img src="screenshots/component-light.jpg" width=220px/>
-</p>
-<p>
-    <img src="screenshots/rooms.jpg" width=220px/>
-    <img src="screenshots/room.jpg" width=220px/>
+    <img src="screenshots/component-temperature-sensor.jpg" width=230px/>
+    <img src="screenshots/component-motion-sensor.jpg" width=230px/>
+    <img src="screenshots/component-light.jpg" width=230px/>
+    <img src="screenshots/rooms.jpg" width=230px/>
+    <img src="screenshots/room.jpg" width=230px/>
 </p>
 
 
@@ -110,5 +108,3 @@ flutter run
 - LinkedIn: https://www.linkedin.com/in/omar-tarakji/
 
 ---
-
-✨ *This project showcases my skills in mobile development, IoT integration, and scalable app architecture.*  
