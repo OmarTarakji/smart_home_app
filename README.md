@@ -27,7 +27,6 @@ The system allows users to **monitor sensors, control actuators, and manage mult
 - **State Management** – Built with **Riverpod** and **Repository Pattern** for clean and scalable architecture.
 - **Brightness Mode** – Support for both light and dark mode.
 
-
 ---
 
 ## 🛠️ Tech Stack
@@ -84,8 +83,9 @@ flutter run
 
 ---
 
-## 🖼️ Screenshot          
+## 🖼️ Screenshots          
 
+**App**
 <p>
     <img src="screenshots/dashboard-grid-view.gif" style="width: 230px;"/>
     <img src="screenshots/dashboard-tile-view.gif" style="width: 230px;"/>
