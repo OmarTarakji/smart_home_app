@@ -9,17 +9,17 @@ The system allows users to **monitor sensors, control actuators, and manage mult
 
 - **Authentication** – Create an account, sign in, or explore via a demo account.
 - **Dashboard** – View all linked devices and components with real-time sensor readings and actuator controls.
-    - Customize dashboard layout (list/grid).
-    - Group components by device or room.
+- Customize dashboard layout (list/grid).
+- Group components by device or room.
 - **Component Details** –
-    - Latest readings.
-    - Sensor history with charts.
-    - Rename components and assign icons.
-    - View associated room and device info.
+- Latest readings.
+- Sensor history with charts.
+- Rename components and assign icons.
+- View associated room and device info.
 - **Device Management** –
-    - Link ESP32 devices via **SmartConfig**.
-    - View MAC address, linking date, and component list.
-    - Rename or remove devices.
+- Link ESP32 devices via **SmartConfig**.
+- View MAC address, linking date, and component list.
+- Rename or remove devices.
 - **Rooms** – Create rooms with names and images, assign components to organize the smart home.
 - **User Profile** – Customize username, profile picture, and update password.
 - **Localization** – Full **English & Arabic** support with toggle option.
@@ -83,8 +83,9 @@ flutter run
 
 ---
 
-## 🖼️ Screenshot          
+## 🖼️ Screenshots          
 
+**App**
 <p>
     <img src="screenshots/dashboard-grid-view.gif" style="width: 230px;"/>
     <img src="screenshots/dashboard-tile-view.gif" style="width: 230px;"/>
@@ -98,6 +99,13 @@ flutter run
     <img src="screenshots/room.jpg" width=230px/>
 </p>
 
+**Hardware**
+<p>
+    <img src="screenshots/hardware-1.jpg" width=330px/>
+    <img src="screenshots/hardware-2.jpg" width=330px/>
+    <img src="screenshots/hardware-3.jpg" width=330px/>
+    <img src="screenshots/hardware-4.jpg" width=330px/>
+</p>
 
 ---
 
