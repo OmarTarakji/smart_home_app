@@ -52,7 +52,7 @@ class RoomEditorScreen extends ConsumerWidget {
   ) async {
     try {
       final int id = await ref.read(roomsProvider.notifier).addRoom();
-      if (context.mounted) context.pushReplacement('/room', extra: id);
+      if (context.mounted) context.go('/rooms/$id');
     } catch (error) {
       context.showSnackBar(TextFormatter.getErrorMessage(error, l10n));
     }

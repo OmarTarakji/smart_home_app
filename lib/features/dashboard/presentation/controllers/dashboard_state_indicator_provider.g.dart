@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'language_provider.dart';
+part of 'dashboard_state_indicator_provider.dart';
 
 // **************************************************************************
 // RiverpodGenerator
@@ -9,52 +9,52 @@ part of 'language_provider.dart';
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint, type=warning
 
-@ProviderFor(SelectedLanguage)
-const selectedLanguageProvider = SelectedLanguageProvider._();
+@ProviderFor(ReadingsState)
+const readingsStateProvider = ReadingsStateProvider._();
 
-final class SelectedLanguageProvider
-    extends $NotifierProvider<SelectedLanguage, Locale> {
-  const SelectedLanguageProvider._()
+final class ReadingsStateProvider
+    extends $NotifierProvider<ReadingsState, DataState> {
+  const ReadingsStateProvider._()
     : super(
         from: null,
         argument: null,
         retry: null,
-        name: r'selectedLanguageProvider',
+        name: r'readingsStateProvider',
         isAutoDispose: true,
         dependencies: null,
         $allTransitiveDependencies: null,
       );
 
   @override
-  String debugGetCreateSourceHash() => _$selectedLanguageHash();
+  String debugGetCreateSourceHash() => _$readingsStateHash();
 
   @$internal
   @override
-  SelectedLanguage create() => SelectedLanguage();
+  ReadingsState create() => ReadingsState();
 
   /// {@macro riverpod.override_with_value}
-  Override overrideWithValue(Locale value) {
+  Override overrideWithValue(DataState value) {
     return $ProviderOverride(
       origin: this,
-      providerOverride: $SyncValueProvider<Locale>(value),
+      providerOverride: $SyncValueProvider<DataState>(value),
     );
   }
 }
 
-String _$selectedLanguageHash() => r'3bf766468b825ba339ce92616b010182091ba92f';
+String _$readingsStateHash() => r'c1ed66f13d947e6fb8f58ba13cb67d0127b57e70';
 
-abstract class _$SelectedLanguage extends $Notifier<Locale> {
-  Locale build();
+abstract class _$ReadingsState extends $Notifier<DataState> {
+  DataState build();
   @$mustCallSuper
   @override
   void runBuild() {
     final created = build();
-    final ref = this.ref as $Ref<Locale, Locale>;
+    final ref = this.ref as $Ref<DataState, DataState>;
     final element =
         ref.element
             as $ClassProviderElement<
-              AnyNotifier<Locale, Locale>,
-              Locale,
+              AnyNotifier<DataState, DataState>,
+              DataState,
               Object?,
               Object?
             >;

@@ -3,9 +3,9 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../data/readings_repository.dart';
-import '../domain/data_state.dart';
-import '../domain/reading.dart';
-import '../presentation/controllers/dashboard_screen_providers.dart';
+import '../models/data_state.dart';
+import '../models/reading.dart';
+import '../presentation/controllers/dashboard_state_indicator_provider.dart';
 
 part 'readings_provider.g.dart';
 

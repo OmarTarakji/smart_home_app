@@ -4,11 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
-import 'package:smart_home/features/dashboard/domain/reading_unit.dart';
+import 'package:smart_home/features/dashboard/models/reading_unit.dart';
 
 import '../../../application/chart_providers.dart';
-import '../../../domain/component.dart';
-import '../../../domain/reading.dart';
+import '../../../models/component.dart';
+import '../../../models/reading.dart';
 
 class NumericChart extends ConsumerWidget {
   const NumericChart({
@@ -193,14 +193,13 @@ class _NumericChart extends StatelessWidget {
           reservedSize: 20,
           interval: 5000,
           maxIncluded: false,
-          getTitlesWidget:
-              (value, meta) => Text(
-                properties.unit!,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: context.colorScheme.primary,
-                ),
-              ),
+          getTitlesWidget: (value, meta) => Text(
+            properties.unit!,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: context.colorScheme.primary,
+            ),
+          ),
         ),
       ),
       bottomTitles: AxisTitles(
@@ -215,9 +214,8 @@ class _NumericChart extends StatelessWidget {
         sideTitles: SideTitles(
           showTitles: properties.unit != null,
           interval: properties.chartInterval,
-          getTitlesWidget:
-              (double value, TitleMeta meta) =>
-                  SideTitleWidget(meta: meta, child: Text('${value.toInt()}')),
+          getTitlesWidget: (double value, TitleMeta meta) =>
+              SideTitleWidget(meta: meta, child: Text('${value.toInt()}')),
           reservedSize: 34,
         ),
       ),

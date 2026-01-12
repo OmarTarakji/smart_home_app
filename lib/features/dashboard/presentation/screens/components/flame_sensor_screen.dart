@@ -8,11 +8,11 @@ import 'package:smart_home/core/utils/text_formatter.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
 import 'package:smart_home/features/dashboard/application/flame_activity_provider.dart';
 import 'package:smart_home/features/dashboard/application/readings_provider.dart';
-import 'package:smart_home/features/dashboard/domain/reading.dart';
+import 'package:smart_home/features/dashboard/models/reading.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/component_screen.dart';
 import 'package:smart_home/features/dashboard/presentation/widgets/component_extras.dart';
 
-import '../../../domain/component.dart';
+import '../../../models/component.dart';
 import '../../widgets/readings/flame_sensor_reading.dart';
 import '../../widgets/readings/no_reading.dart';
 
@@ -95,25 +95,20 @@ class FlameSensorScreen extends StatelessWidget {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: data.length,
-              itemBuilder:
-                  (context, index) => ListTile(
-                    leading: Icon(
-                      Icons.error_outline,
-                      color: context.colorScheme.error,
-                      size: 30,
-                    ),
-                    title: Text(
-                      l10n.flameSensorFlameDetected,
-                    ), // Use localization key
+              itemBuilder: (context, index) => ListTile(
+                leading: Icon(
+                  Icons.error_outline,
+                  color: context.colorScheme.error,
+                  size: 30,
+                ),
+                title: Text(
+                  l10n.flameSensorFlameDetected,
+                ), // Use localization key
 
-                    subtitle: Text(
-                      TextFormatter.formatDate(
-                        data[index].timestamp,
-                        locale,
-                        l10n,
-                      ),
-                    ),
-                  ),
+                subtitle: Text(
+                  TextFormatter.formatDate(data[index].timestamp, locale, l10n),
+                ),
+              ),
             );
           },
           error: (error, stackTrace) {

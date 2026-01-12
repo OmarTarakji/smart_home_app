@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/component_screen.dart';
 
-import '../../../domain/component.dart';
+import '../../../models/component.dart';
 import '../../widgets/component_extras.dart';
 import '../../widgets/component_value.dart';
 
@@ -16,7 +16,7 @@ class SwitchScreen extends StatelessWidget {
     return ComponentScreenSkeleton(
       component: component,
       child: SizedBox(
-        height: 720,
+        height: 600,
         child: Column(
           children: [
             const Spacer(),

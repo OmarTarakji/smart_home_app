@@ -1,4 +1,4 @@
-import 'package:smart_home/features/dashboard/domain/reading.dart';
+import 'package:smart_home/features/dashboard/models/reading.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class FlameActivityRepository {

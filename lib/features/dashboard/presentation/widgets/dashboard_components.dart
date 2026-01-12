@@ -10,8 +10,8 @@ import 'package:smart_home/features/images/presentation/dynamic_image.dart';
 import 'package:smart_home/features/rooms/application/rooms_provider.dart';
 import 'package:smart_home/features/rooms/domain/room.dart';
 
-import '../../domain/component.dart';
-import '../../domain/dashboard_state.dart';
+import '../../models/component.dart';
+import '../../models/dashboard_state.dart';
 import 'component_container.dart';
 
 class DashboardComponents extends StatelessWidget {
@@ -24,10 +24,9 @@ class DashboardComponents extends StatelessWidget {
   Widget build(BuildContext context) {
     final components = [for (Device d in devices) ...d.components];
     return SingleChildScrollView(
-      child:
-          layout == DashboardLayout.grid
-              ? _buildDashboardGrid(components)
-              : _buildDashboardList(components),
+      child: layout == DashboardLayout.grid
+          ? _buildDashboardGrid(components)
+          : _buildDashboardList(components),
     );
   }
 
@@ -86,12 +85,12 @@ class DashboardComponentsByRoom extends DashboardComponents {
             debugPrint('LOG: Components By Room: $componentsByRoom');
 
             // Sort room keys to display unassigned components last
-            final roomKeys =
-                componentsByRoom.keys.toList()..sort((a, b) {
-                  if (a == null) return 1; // Unassigned room comes last
-                  if (b == null) return -1; // Unassigned room comes last
-                  return 0;
-                });
+            final roomKeys = componentsByRoom.keys.toList()
+              ..sort((a, b) {
+                if (a == null) return 1; // Unassigned room comes last
+                if (b == null) return -1; // Unassigned room comes last
+                return 0;
+              });
 
             return ListView.builder(
               itemCount: componentsByRoom.length,

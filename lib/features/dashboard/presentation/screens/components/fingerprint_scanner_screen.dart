@@ -7,7 +7,7 @@ import 'package:smart_home/features/dashboard/presentation/widgets/charts/count_
 import 'package:smart_home/features/dashboard/presentation/widgets/component_extras.dart';
 import 'package:smart_home/features/fingerprint/presentation/widgets/fingerprint_scans.dart';
 
-import '../../../domain/component.dart';
+import '../../../models/component.dart';
 import '../component_screen.dart';
 
 class FingerprintScannerScreen extends StatelessWidget {
@@ -16,7 +16,8 @@ class FingerprintScannerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!; // Get AppLocalizations instance
+    final l10n = AppLocalizations.of(context)!;
+
     return ComponentScreenSkeleton(
       component: component,
       child: Column(
@@ -29,7 +30,7 @@ class FingerprintScannerScreen extends StatelessWidget {
           FilledButton.icon(
             icon: const Icon(Icons.people_alt_rounded),
             onPressed: () {
-              context.push('/fingerprints-manager', extra: component.id);
+              context.push('/fingerprints-manager/${component.id}');
             },
             label: Text(l10n.fingerprintManage), // Use localization key
             style: FilledButton.styleFrom(
@@ -40,30 +41,25 @@ class FingerprintScannerScreen extends StatelessWidget {
           CountChart(componentId: component.id),
           ComponentExtras(component.roomId, component.deviceInfo),
           const SizedBox(),
-          _buildScansSeparator(context, l10n), // Pass l10n to the helper method
+          Row(
+            children: [
+              const SizedBox(width: 10),
+              Icon(Icons.history, size: 16, color: context.colorScheme.outline),
+              const SizedBox(width: 6),
+              Text(
+                l10n.fingerprintScanHistory, // Use localization key
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                  color: context.colorScheme.outline,
+                ),
+              ),
+              const SizedBox(width: 10),
+              const Expanded(child: Divider(height: 1)),
+              const SizedBox(width: 20),
+            ],
+          ),
           FingerprintScans(component.id),
         ],
       ),
-    );
-  }
-
-  Widget _buildScansSeparator(BuildContext context, AppLocalizations l10n) {
-    // Add AppLocalizations parameter
-    return Row(
-      children: [
-        const SizedBox(width: 10),
-        Icon(Icons.history, size: 16, color: context.colorScheme.outline),
-        const SizedBox(width: 6),
-        Text(
-          l10n.fingerprintScanHistory, // Use localization key
-          style: Theme.of(
-            context,
-          ).textTheme.titleSmall?.copyWith(color: context.colorScheme.outline),
-        ),
-        const SizedBox(width: 10),
-        const Expanded(child: Divider(height: 1)),
-        const SizedBox(width: 20),
-      ],
     );
   }
 }

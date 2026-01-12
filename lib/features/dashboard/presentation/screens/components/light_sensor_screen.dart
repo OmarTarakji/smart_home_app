@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/component_screen.dart';
 import 'package:smart_home/features/dashboard/presentation/widgets/component_value.dart';
 
-import '../../../domain/reading_unit.dart';
+import '../../../models/reading_unit.dart';
 import '../../widgets/charts/light_chart.dart';
 import '../../widgets/component_extras.dart';
 

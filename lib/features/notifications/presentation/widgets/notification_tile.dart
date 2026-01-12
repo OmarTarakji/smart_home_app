@@ -29,7 +29,7 @@ class NotificationTile extends ConsumerWidget {
     return InkWell(
       onTap: () {
         ref.read(notificationsProvider.notifier).markAsRead(notification.id);
-        if (component != null) context.push('/component', extra: component);
+        if (component != null) context.push('/components/${component.id}');
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),

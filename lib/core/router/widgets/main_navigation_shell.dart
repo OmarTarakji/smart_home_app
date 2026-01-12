@@ -8,10 +8,10 @@ import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/features/notifications/application/notifications_provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../../../core/utils/smart_home_icons.dart';
-import 'widgets/custom_navigation.dart';
-import 'widgets/custom_navigation_bar.dart';
-import 'widgets/custom_navigation_rail.dart';
+import '../../utils/smart_home_icons.dart';
+import 'custom_navigation.dart';
+import 'custom_navigation_bar.dart';
+import 'custom_navigation_rail.dart';
 
 class MainNavigationShell extends ConsumerStatefulWidget {
   const MainNavigationShell({required this.child, super.key});
@@ -30,16 +30,11 @@ class _MainNavigationShellState extends ConsumerState<MainNavigationShell> {
   void initState() {
     supabase.auth.onAuthStateChange.listen((event) async {
       if (event.event == AuthChangeEvent.signedIn) {
-        debugPrint('LOG: Here\'s the problem');
         final settings = await FirebaseMessaging.instance.requestPermission(
           provisional: true,
         );
-        debugPrint('LOG: settings $settings');
         final fcmToken = await FirebaseMessaging.instance.getToken();
-        debugPrint('LOG: fcmToken $fcmToken');
-        if (fcmToken != null) {
-          await _setFcmToken(fcmToken);
-        }
+        if (fcmToken != null) await _setFcmToken(fcmToken);
       }
     });
     FirebaseMessaging.instance.onTokenRefresh.listen((fcmToken) async {
@@ -49,8 +44,9 @@ class _MainNavigationShellState extends ConsumerState<MainNavigationShell> {
     FirebaseMessaging.onMessage.listen((payload) {
       final notification = payload.notification;
       if (notification != null) {
-        debugPrint('LOG: ${notification.title}: ${notification.body}');
-        context.showSnackBar('${notification.title}: ${notification.body}');
+        if (mounted) {
+          context.showSnackBar('${notification.title}: ${notification.body}');
+        }
         ref.read(notificationsProvider.notifier).refresh();
       }
     });
@@ -66,23 +62,21 @@ class _MainNavigationShellState extends ConsumerState<MainNavigationShell> {
     final selectedIndex = _calculateSelectedIndex(context);
 
     return Scaffold(
-      bottomNavigationBar:
-          isWideScreen
-              ? null
-              : CustomNavigationBar(
-                onDestinationSelected: (idx) => _onItemTapped(idx, context),
-                selectedIndex: _calculateSelectedIndex(context),
-                destinations: _navDestinations(l10n),
-              ),
-      body:
-          isWideScreen
-              ? CustomNavigationRail(
-                onDestinationSelected: (idx) => _onItemTapped(idx, context),
-                selectedIndex: selectedIndex,
-                destinations: _navDestinations(l10n),
-                body: widget.child,
-              )
-              : widget.child,
+      bottomNavigationBar: isWideScreen
+          ? null
+          : CustomNavigationBar(
+              onDestinationSelected: (idx) => _onItemTapped(idx, context),
+              selectedIndex: _calculateSelectedIndex(context),
+              destinations: _navDestinations(l10n),
+            ),
+      body: isWideScreen
+          ? CustomNavigationRail(
+              onDestinationSelected: (idx) => _onItemTapped(idx, context),
+              selectedIndex: selectedIndex,
+              destinations: _navDestinations(l10n),
+              body: widget.child,
+            )
+          : widget.child,
     );
   }
 

@@ -11,8 +11,8 @@
 ///      fonts:
 ///       - asset: fonts/SmartHome.ttf
 ///
-///
-///
+library;
+
 import 'package:flutter/widgets.dart';
 
 class AppIcons {

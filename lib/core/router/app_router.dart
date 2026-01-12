@@ -2,7 +2,6 @@ import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:smart_home/features/auth/presentation/screens/login_screen.dart';
 import 'package:smart_home/features/auth/presentation/screens/signup_screen.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/component_screen.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/dashboard_screen.dart';
 import 'package:smart_home/features/devices/application/devices_notifier.dart';
@@ -25,8 +24,8 @@ import 'package:smart_home/features/rooms/presentation/screens/room_screen.dart'
 import 'package:smart_home/features/rooms/presentation/screens/rooms_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../../../providers/providers.dart';
-import '../main_navigation_shell.dart';
+import '../providers/providers.dart';
+import 'widgets/main_navigation_shell.dart';
 
 part 'app_router.g.dart';
 
@@ -47,15 +46,39 @@ GoRouter appRouter(Ref ref) {
         routes: [
           GoRoute(
             path: '/dashboard',
-            builder: (_, _) => const DashboardScreen(),
+            builder: (context, state) => const DashboardScreen(),
+            routes: [
+              GoRoute(
+                path: 'notifications',
+                builder: (context, state) => const NotificationsScreen(),
+              ),
+              GoRoute(
+                path: 'components/:id',
+                builder: (context, state) => ComponentScreenRouter(
+                  id: int.parse(state.pathParameters['id']!),
+                ),
+              ),
+            ],
           ),
           GoRoute(path: '/devices', builder: (_, _) => const DevicesScreen()),
-          GoRoute(path: '/rooms', builder: (_, _) => const RoomsScreen()),
+          GoRoute(
+            path: '/rooms',
+            builder: (_, _) => const RoomsScreen(),
+            routes: [
+              GoRoute(
+                path: '/:id',
+                builder: (_, state) =>
+                    RoomScreen(roomId: int.parse(state.pathParameters['id']!)),
+              ),
+            ],
+          ),
           GoRoute(path: '/profile', builder: (_, _) => const ProfileScreen()),
         ],
       ),
       GoRoute(path: '/login', builder: (_, _) => const LoginScreen()),
       GoRoute(path: '/signup', builder: (_, _) => const SignUpScreen()),
+
+      // profile
       GoRoute(
         path: '/edit-profile',
         builder: (_, _) => const EditProfileScreen(),
@@ -64,48 +87,29 @@ GoRouter appRouter(Ref ref) {
         path: '/change-password',
         builder: (_, _) => const ChangePasswordScreen(),
       ),
+
+      // devices
       GoRoute(path: '/add-device', builder: (_, _) => const NewDeviceScreen()),
+
+      // rooms
       GoRoute(
         path: '/add-room',
         builder: (context, state) => const RoomEditorScreen(),
       ),
-      GoRoute(
-        path: '/room',
-        builder: (_, state) => RoomScreen(roomId: state.extra as int),
-        routes: [
-          GoRoute(
-            path: 'components-picker',
-            builder: (_, state) => ComponentsPicker(roomId: state.extra as int),
-          ),
-        ],
-      ),
-      GoRoute(
-        path: '/component',
-        builder:
-            (context, state) => ComponentScreenRouter(state.extra as Component),
-      ),
+
       GoRoute(
         path: '/fingerprints-manager',
-        builder:
-            (context, state) => FingerprintsManagerScreen(state.extra as int),
+        builder: (context, state) =>
+            FingerprintsManagerScreen(state.extra as int),
       ),
       GoRoute(
         path: '/edit-fingerprint',
-        builder:
-            (context, state) =>
-                EditFingerprintScreen(state.extra as Fingerprint),
+        builder: (context, state) =>
+            EditFingerprintScreen(state.extra as Fingerprint),
       ),
       GoRoute(
         path: '/add-fingerprint',
         builder: (context, state) => AddFingerprintScreen(state.extra as int),
-      ),
-      // GoRoute(
-      //   path: '/add-fingerprint-2',
-      //   builder: (context, state) => AddFingerprintScreen2(),
-      // ),
-      GoRoute(
-        path: '/notifications',
-        builder: (context, state) => const NotificationsScreen(),
       ),
     ],
     redirect: (context, state) {

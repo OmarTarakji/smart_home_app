@@ -1,4 +1,4 @@
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/devices/domain/device.dart';
 
 class FilteredComponents {

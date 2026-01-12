@@ -86,18 +86,18 @@ flutter run
 ## 🖼️ Screenshot          
 
 <p>
-<img src="screenshots/dashboard-grid-view.gif" width=220/>
-<img src="screenshots/dashboard-tile-view.gif" width=220/>
-<img src="screenshots/link-a-device.gif" width=220/>
+  <img src="screenshots/dashboard-grid-view.gif" width=220/>
+  <img src="screenshots/dashboard-tile-view.gif" width=220/>
+  <img src="screenshots/link-a-device.gif" width=220/>
 </p>
 <p>
-<img src="screenshots/component-temperature-sensor.jpg" width=220/>
-<img src="screenshots/component-motion-sensor.jpg" width=220/>
-<img src="screenshots/component-light.jpg" width=220/>
+  <img src="screenshots/component-temperature-sensor.jpg" width=220/>
+  <img src="screenshots/component-motion-sensor.jpg" width=220/>
+  <img src="screenshots/component-light.jpg" width=220/>
 </p>
 <p>
-<img src="screenshots/rooms.jpg" width=220/>
-<img src="screenshots/room.jpg" width=220/>
+  <img src="screenshots/rooms.jpg" width=220/>
+  <img src="screenshots/room.jpg" width=220/>
 </p>
 
 ---

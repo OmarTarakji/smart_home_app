@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:smart_home/core/constants/images.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/utils/extensions.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 
 import '../../domain/device.dart';
 

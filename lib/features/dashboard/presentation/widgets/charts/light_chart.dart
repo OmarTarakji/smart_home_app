@@ -4,11 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
-import 'package:smart_home/features/dashboard/domain/reading_unit.dart';
+import 'package:smart_home/features/dashboard/models/reading_unit.dart';
 
 import '../../../application/chart_providers.dart';
-import '../../../domain/component.dart';
-import '../../../domain/reading.dart';
+import '../../../models/component.dart';
+import '../../../models/reading.dart';
 
 class LightChart extends ConsumerWidget {
   const LightChart({
@@ -193,12 +193,11 @@ class _LightChart extends StatelessWidget {
           showTitles: true,
           interval: 2047.5,
           getTitlesWidget: (double value, TitleMeta meta) {
-            final icon =
-                value == 0
-                    ? Icons.nightlight
-                    : value == 4095
-                    ? Icons.sunny
-                    : Icons.light_mode_outlined;
+            final icon = value == 0
+                ? Icons.nightlight
+                : value == 4095
+                ? Icons.sunny
+                : Icons.light_mode_outlined;
             return SideTitleWidget(meta: meta, child: Icon(icon, size: 17));
           },
           reservedSize: 22,

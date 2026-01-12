@@ -9,6 +9,7 @@
 
   "exitAndCancel": "العودة",
   "delete": "حذف",
+  "saving": "جاري الحفظ...",
   "loading": "جاري التحميل...",
   "add": "إضافة",
   "save": "حفظ",
@@ -48,13 +49,22 @@
 
   "manageFingerprintsNote": "تتطلب إضافة/حذف بصمات الأصابع أن تكون متصلاً بنفس شبكة الواي فاي التي يتصل بها الجهاز الذكي.",
   "fingerprintsErrorReloadButton": "أعد المحاولة",
-  "addFingerprintButton": "إضافة بصمة",
+  "fingerprintAddButton": "إضافة بصمة",
   "fingerprintsMaxNumber": "وصلت إلى الحد الأقصى لعدد بصمات الأصابع",
   "fingerprintsDeleteAllButton": "حذف الكل",
   "fingerprintsDeleteDialog": "هل تريد حذف جميع بصمات الأصابع؟",
   "fingerprintsDeleting":"جاري حذف جميع بصمات الأصابع...",
   "fingerprintsDeleteAllError": "فشل حذف بصمات الأصابع",
-
+    "fingerprintDelete": "حذف ${name}",
+    "@fingerprintDelete": {
+        "placeholders": {
+            "name": {
+                "type": "String"
+            }
+        }
+    },
+  "fingerprintDeleteDialog": "هل تريد حذف البصمة؟?",
+    "fingerprintDeleting": "جاري حذف البصمة...",
   "addFingerprintScreenTitle": "إضافة بصمة",
   "fingerprintNameTitle": "الاسم:",
   "fingerprintNameEmpty": "لا يمكن ترك هذا الحقل فارغاً",

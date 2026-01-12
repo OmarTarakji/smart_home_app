@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_home/core/utils/extensions.dart';
-import 'package:smart_home/features/dashboard/domain/reading.dart';
+import 'package:smart_home/features/dashboard/models/reading.dart';
 
 class NumericReading extends StatelessWidget {
   final double? fontSize;

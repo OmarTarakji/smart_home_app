@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/dashboard/presentation/screens/component_screen.dart';
 
 import '../../widgets/charts/count_chart.dart';

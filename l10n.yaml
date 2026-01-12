@@ -1,3 +1,4 @@
 arb-dir: lib/core/l10n #localization directory location
 template-arb-file: app_en.arb #default template location (english)
 output-localization-file: app_localizations.dart #generation location
+untranslated-messages-file: lib/core/l10n/untranslated.txt

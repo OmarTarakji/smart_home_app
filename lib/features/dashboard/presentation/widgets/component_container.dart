@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:smart_home/core/constants/images.dart';
 import 'package:smart_home/core/utils/extensions.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 
 import 'component_value.dart';
 
@@ -24,7 +24,7 @@ abstract class ComponentContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(borderRadius),
-      onTap: () => context.push('/component', extra: component),
+      onTap: () => context.go('/dashboard/components/${component.id}'),
       child: Ink(
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(

@@ -1,7 +1,7 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/utils/text_formatter.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/rooms/data/rooms_repository.dart';
 
 import '../../devices/application/devices_notifier.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/core/utils/smart_home_icons.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 
 import '../../../../dashboard/presentation/widgets/component_value.dart';
 

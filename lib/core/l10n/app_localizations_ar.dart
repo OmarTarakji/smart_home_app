@@ -33,7 +33,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get loading => 'جاري التحميل...';
 
   @override
-  String get saving => 'Saving...';
+  String get saving => 'جاري الحفظ...';
 
   @override
   String get add => 'إضافة';
@@ -130,7 +130,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get fingerprintsErrorReloadButton => 'أعد المحاولة';
 
   @override
-  String get fingerprintAddButton => 'Add fingerprint';
+  String get fingerprintAddButton => 'إضافة بصمة';
 
   @override
   String get fingerprintsMaxNumber => 'وصلت إلى الحد الأقصى لعدد بصمات الأصابع';
@@ -149,15 +149,14 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String fingerprintDelete(String name) {
-    return 'Delete \$$name';
+    return 'حذف \$$name';
   }
 
   @override
-  String get fingerprintDeleteDialog =>
-      'Do you want to delete this fingerprint?';
+  String get fingerprintDeleteDialog => 'هل تريد حذف البصمة؟?';
 
   @override
-  String get fingerprintDeleting => 'Deleting fingerprint...';
+  String get fingerprintDeleting => 'جاري حذف البصمة...';
 
   @override
   String get addFingerprintScreenTitle => 'إضافة بصمة';

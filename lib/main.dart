@@ -9,7 +9,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'core/constants/images.dart';
 import 'core/l10n/app_localizations.dart';
-import 'core/navigation/presentation/controllers/app_router.dart';
+import 'core/router/app_router.dart';
 import 'core/providers/providers.dart';
 import 'core/theme/app_theme.dart';
 import 'core/theme/text_theme.dart';
@@ -42,10 +42,9 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedLanguage = ref.watch(selectedLanguageProvider);
-    TextTheme textTheme =
-        selectedLanguage.languageCode == 'ar'
-            ? createTextTheme(context, 'Cairo', 'Cairo')
-            : createTextTheme(context, 'AvantGarde', 'AvantGarde');
+    TextTheme textTheme = selectedLanguage.languageCode == 'ar'
+        ? createTextTheme(context, 'Cairo', 'Cairo')
+        : createTextTheme(context, 'AvantGarde', 'AvantGarde');
     AppTheme theme = AppTheme(textTheme);
     return MaterialApp.router(
       title: 'Smart Home',

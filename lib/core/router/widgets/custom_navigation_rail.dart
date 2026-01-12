@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'custom_navigation.dart';
 
 class CustomNavigationRail extends CustomNavigation {

@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/devices/application/devices_notifier.dart';
 
 part 'notification_component_provider.g.dart';

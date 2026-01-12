@@ -4,7 +4,7 @@ import 'package:smart_home/core/l10n/app_localizations.dart';
 import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
 import 'package:smart_home/core/widgets/loading_body.dart';
-import 'package:smart_home/features/dashboard/domain/component.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
 import 'package:smart_home/features/rooms/application/room_providers.dart';
 
 import '../../domain/filtered_component.dart';

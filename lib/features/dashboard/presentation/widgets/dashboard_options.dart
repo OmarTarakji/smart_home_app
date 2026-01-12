@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart'; // Import AppLocalizations
 import 'package:smart_home/core/utils/smart_home_icons.dart';
 
-import '../../domain/dashboard_state.dart';
+import '../../models/dashboard_state.dart';
 
 class DashboardOptions extends StatefulWidget {
   const DashboardOptions(this.dashboardState, {super.key});

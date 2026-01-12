@@ -69,13 +69,13 @@ class FingerprintUdpService extends UdpService {
 
           if (json['status'] == 'info') {
             if (json['message'] == 'Started') {
-              yield AddFingerprintResponse(AddFpState.started);
+              yield const AddFingerprintResponse(AddFpState.started);
             }
             if (json['message'] == 'Remove your finger') {
-              yield AddFingerprintResponse(AddFpState.removeFinger);
+              yield const AddFingerprintResponse(AddFpState.removeFinger);
             }
             if (json['message'] == 'Place the same finger again') {
-              yield AddFingerprintResponse(AddFpState.placeFinger);
+              yield const AddFingerprintResponse(AddFpState.placeFinger);
             }
           } else if (json['status'] == 'success') {
             yield AddFingerprintResponse.success(int.parse(json['id']));

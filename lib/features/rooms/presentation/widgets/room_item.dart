@@ -21,7 +21,7 @@ class RoomItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.push('/room', extra: id),
+      onTap: () => context.go('/rooms/$id'),
       child: Padding(
         padding: EdgeInsets.all(padding),
         child: Column(

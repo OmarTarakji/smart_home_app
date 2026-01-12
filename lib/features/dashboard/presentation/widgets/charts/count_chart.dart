@@ -5,7 +5,7 @@ import 'package:smart_home/core/utils/extensions.dart';
 import 'package:smart_home/core/widgets/error_screen.dart';
 
 import '../../../application/chart_providers.dart';
-import '../../../domain/reading.dart';
+import '../../../models/reading.dart';
 
 class CountChart extends ConsumerWidget {
   const CountChart({super.key, required this.componentId});
@@ -41,13 +41,18 @@ class CountChart extends ConsumerWidget {
               loading: () => const Center(child: CircularProgressIndicator()),
             ),
           ),
-          _buildChartControls(context, ref),
+          const _ChartControls(),
         ],
       ),
     );
   }
+}
 
-  Widget _buildChartControls(BuildContext context, WidgetRef ref) {
+class _ChartControls extends ConsumerWidget {
+  const _ChartControls();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
     final notifier = ref.read(chartDateProvider.notifier);
     final date = ref.watch(chartDateProvider);
 

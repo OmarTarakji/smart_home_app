@@ -1,5 +1,5 @@
-import 'package:smart_home/features/dashboard/domain/component.dart';
-import 'package:smart_home/features/dashboard/domain/component_type.dart';
+import 'package:smart_home/features/dashboard/models/component.dart';
+import 'package:smart_home/features/dashboard/models/component_type.dart';
 
 class UdpDevice {
   final String ipAddress;

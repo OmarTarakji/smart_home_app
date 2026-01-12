@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:smart_home/core/l10n/app_localizations.dart'; // Import AppLocalizations
 import 'package:smart_home/core/utils/extensions.dart';
 
-import '../../domain/data_state.dart';
-import '../controllers/dashboard_screen_providers.dart';
+import '../../models/data_state.dart';
+import '../controllers/dashboard_state_indicator_provider.dart';
 
 class StateIndicator extends ConsumerStatefulWidget {
   const StateIndicator({super.key});
@@ -28,12 +28,10 @@ class _StateIndicatorState extends ConsumerState<StateIndicator>
       duration: const Duration(milliseconds: 450),
       vsync: this,
     );
-    _slideAnimation = Tween<Offset>(
-      begin: const Offset(0, -0.3),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(parent: _animationController, curve: Curves.easeOut),
-    );
+    _slideAnimation =
+        Tween<Offset>(begin: const Offset(0, -0.3), end: Offset.zero).animate(
+          CurvedAnimation(parent: _animationController, curve: Curves.easeOut),
+        );
   }
 
   @override

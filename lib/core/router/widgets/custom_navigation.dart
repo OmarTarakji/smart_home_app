@@ -22,10 +22,9 @@ abstract class CustomNavigation extends StatelessWidget {
           label: d.label,
           width: width,
           onPressed: () => onDestinationSelected(destinations.indexOf(d)),
-          color:
-              selectedIndex == destinations.indexOf(d)
-                  ? context.colorScheme.primary
-                  : null,
+          color: selectedIndex == destinations.indexOf(d)
+              ? context.colorScheme.primary
+              : null,
         ),
     ];
   }

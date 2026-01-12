@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../domain/reading.dart';
+import '../models/reading.dart';
 
 class ReadingsRepository {
   final SupabaseClient _supabase = Supabase.instance.client;
@@ -15,10 +15,9 @@ class ReadingsRepository {
 
     final readings = <int, ComponentReading?>{
       for (Map<String, dynamic> reading in response)
-        reading['component_id']:
-            reading['value'] == null
-                ? null
-                : ComponentReading.fromJson(reading),
+        reading['component_id']: reading['value'] == null
+            ? null
+            : ComponentReading.fromJson(reading),
     };
     return readings;
   }
@@ -39,11 +38,10 @@ class ReadingsRepository {
   }
 
   Future<void> updateValue(int id, String value) async {
-    final resp =
-        await _supabase.from('component_history').insert({
-          'component_id': id,
-          'value': value,
-        }).select();
+    final resp = await _supabase.from('component_history').insert({
+      'component_id': id,
+      'value': value,
+    }).select();
     debugPrint(resp.toString());
   }
 
