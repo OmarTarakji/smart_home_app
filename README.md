@@ -83,21 +83,28 @@ flutter run
 
 ---
 
-## 🖼️ Screenshot          
+## 🖼️ Screenshots          
 
+**App**
 <p>
-  <img src="screenshots/dashboard-grid-view.gif" width=220/>
-  <img src="screenshots/dashboard-tile-view.gif" width=220/>
-  <img src="screenshots/link-a-device.gif" width=220/>
+    <img src="screenshots/dashboard-grid-view.gif" style="width: 230px;"/>
+    <img src="screenshots/dashboard-tile-view.gif" style="width: 230px;"/>
+    <img src="screenshots/link-a-device.gif" style="width: 230px;"/>
 </p>
 <p>
-  <img src="screenshots/component-temperature-sensor.jpg" width=220/>
-  <img src="screenshots/component-motion-sensor.jpg" width=220/>
-  <img src="screenshots/component-light.jpg" width=220/>
+    <img src="screenshots/component-temperature-sensor.jpg" width=230px/>
+    <img src="screenshots/component-motion-sensor.jpg" width=230px/>
+    <img src="screenshots/component-light.jpg" width=230px/>
+    <img src="screenshots/rooms.jpg" width=230px/>
+    <img src="screenshots/room.jpg" width=230px/>
 </p>
+
+**Hardware**
 <p>
-  <img src="screenshots/rooms.jpg" width=220/>
-  <img src="screenshots/room.jpg" width=220/>
+    <img src="screenshots/hardware-1.jpg" width=330px/>
+    <img src="screenshots/hardware-2.jpg" width=330px/>
+    <img src="screenshots/hardware-3.jpg" width=330px/>
+    <img src="screenshots/hardware-4.jpg" width=330px/>
 </p>
 
 ---
@@ -109,5 +116,3 @@ flutter run
 - LinkedIn: https://www.linkedin.com/in/omar-tarakji/
 
 ---
-
-✨ *This project showcases my skills in mobile development, IoT integration, and scalable app architecture.*  
